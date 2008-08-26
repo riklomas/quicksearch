@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>rikrikrik - quickSearch jQuery plug-in - Tables</title>
+		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery.quicksearch.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/mint/?js" type="text/javascript"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function () {				
+				$('table#t1 tbody tr th').quicksearch({
+					hideElement: 'parent',
+					stripeRowClass: ['odd', 'even'],
+					labelText: 'Search by the email column only'
+				});
+				$('table#t2 tbody tr').quicksearch({
+					stripeRowClass: ['odd', 'even'],
+					position: 'before',
+					attached: '#t2',
+					labelText: 'Search by anything'
+				});			
+			})			
+		</script>
+		<link rel="stylesheet" href="style.css" type="text/css" media="all" title="" />		
+	</head>
+	<body>
+		
+		
+	
+	
+	<table id="t1" cellspacing="0">
+    <thead>
+    	<tr>
+
+    		<th>Email</th>
+    		<th>Id</th>
+    		<th>Phone</th>
+    		<th>Total</th>
+    		<th>Ip</th>
+    		<th>Url</th>
+
+    		<th>Time</th>
+    		<th>ISO Date</th>
+    		<th>UK Date</th>
+    	</tr>
+    </thead>
+    <tbody>
+    	<tr>
+    		<th>devo@flexomat.com</th>
+
+    		<td>66672</td>
+    		<td>941-964-8535</td>
+    		<td>$2482.79</td>
+    		<td>172.78.200.124</td>
+
+    		<td>http://gmail.com</td>
+    		<td>15:10</td>
+
+    		<td>1988/12/14</td>
+    		<td>14/12/1988</td>
+    	</tr>
+
+    	<tr>
+    		<th>henry@mountdev.net</th>
+
+    		<td>35889</td>
+
+    		<td>941-964-9543</td>
+    		<td>$2776.09</td>
+    		<td>119.232.182.142</td>
+    		<td>http://www.gmail.com</td>
+    		<td>3:54</td>
+
+    		<td>1974/1/19</td>
+
+    		<td>19/1/1974</td>
+    	</tr>
+
+    	<tr>
+    		<th>christian@reno.gov</th>
+    		<td>60021</td>
+    		<td>941-964-5617</td>
+
+    		<td>$2743.41</td>
+    		<td>167.209.64.181</td>
+    		<td>http://www.dotnet.ca</td>
+    		<td>10:58</td>
+    		<td>2000/3/25</td>
+    		<td>25/3/2000</td>
+
+    	</tr>
+
+    	<tr>
+    		<th>muffins@donuts.com</th>
+    		<td>17927</td>
+    		<td>941-964-9511</td>
+    		<td>$2998.18</td>
+
+    		<td>210.214.231.182</td>
+
+    		<td>http://google.se</td>
+    		<td>21:22</td>
+    		<td>1993/1/24</td>
+    		<td>24/1/1993</td>
+    	</tr>
+
+
+    	<tr>
+    		<th>muffins@reno.gov</th>
+
+    		<td>76375</td>
+    		<td>941-964-2757</td>
+    		<td>$1836.09</td>
+    		<td>220.222.93.171</td>
+
+    		<td>http://www.samba.org</td>
+    		<td>15:22</td>
+
+    		<td>1988/4/4</td>
+    		<td>4/4/1988</td>
+    	</tr>
+
+    	<tr>
+
+    		<th>mendez@gmail.com</th>
+    		<td>45834</td>
+    		<td>941-964-2575</td>
+
+    		<td>$2805.46</td>
+    		<td>228.170.245.253</td>
+    		<td>http://flexomat.com</td>
+
+    		<td>11:31</td>
+    		<td>1975/12/12</td>
+    		<td>12/12/1975</td>
+
+    	</tr>
+
+    	<tr>
+    		<th>dev@gmail.com</th>
+
+    		<td>20022</td>
+    		<td>941-964-4967</td>
+    		<td>$3296.54</td>
+    		<td>175.248.70.240</td>
+
+    		<td>http://www.flexomat.com</td>
+    		<td>4:27</td>
+
+    		<td>2002/7/3</td>
+    		<td>3/7/2002</td>
+    	</tr>
+
+    	<tr>
+    		<th>foo@polyester.se</th>
+
+    		<td>55977</td>
+
+    		<td>941-964-745</td>
+    		<td>$2953.73</td>
+    		<td>222.114.227.156</td>
+    		<td>http://www.donuts.com</td>
+    		<td>23:49</td>
+
+    		<td>1977/8/4</td>
+
+    		<td>4/8/1977</td>
+    	</tr>
+
+    	<tr>
+    		<th>adam@aftonbladet.se</th>
+    		<td>38867</td>
+    		<td>941-964-6302</td>
+
+    		<td>$1949.27</td>
+    		<td>116.241.143.196</td>
+    		<td>http://flexomat.com</td>
+    		<td>23:35</td>
+    		<td>1995/7/27</td>
+    		<td>27/7/1995</td>
+
+    	</tr>
+
+    	<tr>
+    		<th>devo@donuts.com</th>
+    		<td>51426</td>
+    		<td>941-964-1234</td>
+    		<td>$1067.00</td>
+
+    		<td>88.96.149.82</td>
+
+    		<td>http://www.polyester.se</td>
+    		<td>15:17</td>
+    		<td>1986/1/5</td>
+    		<td>5/1/1986</td>
+    	</tr>
+
+
+    	<tr>
+    		<th>henry@samba.org</th>
+
+    		<td>40859</td>
+    		<td>941-964-4856</td>
+    		<td>$3401.19</td>
+    		<td>68.152.250.74</td>
+
+    		<td>http://www.flexomat.com</td>
+    		<td>4:36</td>
+
+    		<td>1990/3/7</td>
+    		<td>7/3/1990</td>
+    	</tr>
+
+    	<tr>
+
+    		<th>found@dotnet.ca</th>
+    		<td>23986</td>
+    		<td>941-964-2686</td>
+
+    		<td>$1393.52</td>
+    		<td>98.102.181.138</td>
+    		<td>http://lostnfound.org</td>
+
+    		<td>5:51</td>
+    		<td>1993/7/22</td>
+    		<td>22/7/1993</td>
+
+    	</tr>
+
+    	<tr>
+    		<th>carl@fish.org</th>
+
+    		<td>73392</td>
+    		<td>941-964-5792</td>
+    		<td>$3876.04</td>
+    		<td>246.234.182.243</td>
+
+    		<td>http://www.google.se</td>
+    		<td>6:52</td>
+
+    		<td>1984/7/14</td>
+    		<td>14/7/1984</td>
+    	</tr>
+
+    	<tr>
+    		<th>found@mountdev.net</th>
+
+    		<td>03519</td>
+
+    		<td>941-964-1599</td>
+    		<td>$1176.48</td>
+    		<td>104.212.122.177</td>
+    		<td>http://donuts.com</td>
+    		<td>18:52</td>
+
+    		<td>2000/8/6</td>
+
+    		<td>6/8/2000</td>
+    	</tr>
+    </table>
+
+
+	<table id="t2" cellspacing="0">
+    <thead>
+    	<tr>
+
+    		<th>Email</th>
+    		<th>Id</th>
+    		<th>Phone</th>
+    		<th>Total</th>
+    		<th>Ip</th>
+    		<th>Url</th>
+
+    		<th>Time</th>
+    		<th>ISO Date</th>
+    		<th>UK Date</th>
+    	</tr>
+    </thead>
+    <tbody>
+    	<tr>
+    		<th>devo@flexomat.com</th>
+
+    		<td>66672</td>
+    		<td>941-964-8535</td>
+    		<td>$2482.79</td>
+    		<td>172.78.200.124</td>
+
+    		<td>http://gmail.com</td>
+    		<td>15:10</td>
+
+    		<td>1988/12/14</td>
+    		<td>14/12/1988</td>
+    	</tr>
+
+    	<tr>
+    		<th>henry@mountdev.net</th>
+
+    		<td>35889</td>
+
+    		<td>941-964-9543</td>
+    		<td>$2776.09</td>
+    		<td>119.232.182.142</td>
+    		<td>http://www.gmail.com</td>
+    		<td>3:54</td>
+
+    		<td>1974/1/19</td>
+
+    		<td>19/1/1974</td>
+    	</tr>
+
+    	<tr>
+    		<th>christian@reno.gov</th>
+    		<td>60021</td>
+    		<td>941-964-5617</td>
+
+    		<td>$2743.41</td>
+    		<td>167.209.64.181</td>
+    		<td>http://www.dotnet.ca</td>
+    		<td>10:58</td>
+    		<td>2000/3/25</td>
+    		<td>25/3/2000</td>
+
+    	</tr>
+
+    	<tr>
+    		<th>muffins@donuts.com</th>
+    		<td>17927</td>
+    		<td>941-964-9511</td>
+    		<td>$2998.18</td>
+
+    		<td>210.214.231.182</td>
+
+    		<td>http://google.se</td>
+    		<td>21:22</td>
+    		<td>1993/1/24</td>
+    		<td>24/1/1993</td>
+    	</tr>
+
+
+    	<tr>
+    		<th>muffins@reno.gov</th>
+
+    		<td>76375</td>
+    		<td>941-964-2757</td>
+    		<td>$1836.09</td>
+    		<td>220.222.93.171</td>
+
+    		<td>http://www.samba.org</td>
+    		<td>15:22</td>
+
+    		<td>1988/4/4</td>
+    		<td>4/4/1988</td>
+    	</tr>
+
+    	<tr>
+
+    		<th>mendez@gmail.com</th>
+    		<td>45834</td>
+    		<td>941-964-2575</td>
+
+    		<td>$2805.46</td>
+    		<td>228.170.245.253</td>
+    		<td>http://flexomat.com</td>
+
+    		<td>11:31</td>
+    		<td>1975/12/12</td>
+    		<td>12/12/1975</td>
+
+    	</tr>
+
+    	<tr>
+    		<th>dev@gmail.com</th>
+
+    		<td>20022</td>
+    		<td>941-964-4967</td>
+    		<td>$3296.54</td>
+    		<td>175.248.70.240</td>
+
+    		<td>http://www.flexomat.com</td>
+    		<td>4:27</td>
+
+    		<td>2002/7/3</td>
+    		<td>3/7/2002</td>
+    	</tr>
+
+    	<tr>
+    		<th>foo@polyester.se</th>
+
+    		<td>55977</td>
+
+    		<td>941-964-745</td>
+    		<td>$2953.73</td>
+    		<td>222.114.227.156</td>
+    		<td>http://www.donuts.com</td>
+    		<td>23:49</td>
+
+    		<td>1977/8/4</td>
+
+    		<td>4/8/1977</td>
+    	</tr>
+
+    	<tr>
+    		<th>adam@aftonbladet.se</th>
+    		<td>38867</td>
+    		<td>941-964-6302</td>
+
+    		<td>$1949.27</td>
+    		<td>116.241.143.196</td>
+    		<td>http://flexomat.com</td>
+    		<td>23:35</td>
+    		<td>1995/7/27</td>
+    		<td>27/7/1995</td>
+
+    	</tr>
+
+    	<tr>
+    		<th>devo@donuts.com</th>
+    		<td>51426</td>
+    		<td>941-964-1234</td>
+    		<td>$1067.00</td>
+
+    		<td>88.96.149.82</td>
+
+    		<td>http://www.polyester.se</td>
+    		<td>15:17</td>
+    		<td>1986/1/5</td>
+    		<td>5/1/1986</td>
+    	</tr>
+
+
+    	<tr>
+    		<th>henry@samba.org</th>
+
+    		<td>40859</td>
+    		<td>941-964-4856</td>
+    		<td>$3401.19</td>
+    		<td>68.152.250.74</td>
+
+    		<td>http://www.flexomat.com</td>
+    		<td>4:36</td>
+
+    		<td>1990/3/7</td>
+    		<td>7/3/1990</td>
+    	</tr>
+
+    	<tr>
+
+    		<th>found@dotnet.ca</th>
+    		<td>23986</td>
+    		<td>941-964-2686</td>
+
+    		<td>$1393.52</td>
+    		<td>98.102.181.138</td>
+    		<td>http://lostnfound.org</td>
+
+    		<td>5:51</td>
+    		<td>1993/7/22</td>
+    		<td>22/7/1993</td>
+
+    	</tr>
+
+    	<tr>
+    		<th>carl@fish.org</th>
+
+    		<td>73392</td>
+    		<td>941-964-5792</td>
+    		<td>$3876.04</td>
+    		<td>246.234.182.243</td>
+
+    		<td>http://www.google.se</td>
+    		<td>6:52</td>
+
+    		<td>1984/7/14</td>
+    		<td>14/7/1984</td>
+    	</tr>
+
+    	<tr>
+    		<th>found@mountdev.net</th>
+
+    		<td>03519</td>
+
+    		<td>941-964-1599</td>
+    		<td>$1176.48</td>
+    		<td>104.212.122.177</td>
+    		<td>http://donuts.com</td>
+    		<td>18:52</td>
+
+    		<td>2000/8/6</td>
+
+    		<td>6/8/2000</td>
+    	</tr>
+    </table>
+	
+
+	
+	</body>
+</html>

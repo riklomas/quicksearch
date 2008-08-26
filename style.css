@@ -1,0 +1,55 @@
+body {
+	font: 76% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+
+#rikrikrik {
+	margin-bottom: 0;
+	background: #066;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0px 2px;
+}
+form {
+	margin: 10px 0;
+}
+table {
+	width: 100%;				
+}
+thead th {
+	background: #ccc;
+}
+tbody th {
+	text-align: left;
+}
+pre {
+	font-size: 130%;
+}
+.odd, .r1 {
+	background: #fff;
+}
+.even, .r2 {
+	background: #eee;
+}
+.r3 {
+	background: #ddd;
+}
+#sorting {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 200px;
+	margin-left: -100px;
+	border: 2px solid #999;
+	padding: 10px;
+	display:  none;
+	background: #fff;
+	text-align:  center;
+}
+.search {
+	font-weight:  bold;
+}
+form#quicksearch {
+	padding: 1em;
+	border: 1px solid #ccc;
+}
