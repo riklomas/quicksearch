@@ -9,14 +9,22 @@
 		<script src="/mint/?js" type="text/javascript"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function () {				
-				$('ul li').quicksearch({
+				$('ul#a li').quicksearch({
 					attached: 'ul:first',
 					position: 'before',
 					labelText: 'Search all countries beginning with A',
 					inputText: 'Search',
 					loaderImg: 'loader.gif',
 					loaderText: 'Searching...'
-				});		
+				});	
+				$('ul#rest li').quicksearch({
+					attached: 'ul#rest',
+					position: 'before',
+					labelText: 'Everything else',
+					inputText: 'Search',
+					loaderImg: 'loader.gif',
+					loaderText: 'Searching...'
+				});	
 			});
 		</script>
 		<link rel="stylesheet" href="style.css" type="text/css" media="all" title="" />		

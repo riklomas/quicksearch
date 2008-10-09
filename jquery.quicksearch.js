@@ -213,7 +213,6 @@
 				if($(this).val() == "") {
 					$(this).val(options.inputText);
 				}
-				return false;
 			})
 		};
 		
@@ -287,12 +286,7 @@
 		
 		$('input[rel="' + options.randomElement + '"]').keydown(function (e) {
 			var keycode = e.keyCode;
-			if(keycode == 17 || keycode == 18 || keycode == 224)
-			{
-				specialkey = true;
-			}
-			
-			if (!(keycode == 9 || keycode == 13 || keycode == 38 || keycode == 40 || keycode == 224) && !specialkey)
+			if (!(keycode == 9 || keycode == 13 || keycode == 16 || keycode == 17 || keycode == 18 || keycode == 38 || keycode == 40 || keycode == 224))
 			{
 				qs();
 			}
