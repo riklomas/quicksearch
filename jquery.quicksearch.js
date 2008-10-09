@@ -56,9 +56,6 @@
 		
 		function test_key(k, value, type)
 		{
-			//var value = strip_html( $(value).html() );
-			//var value = $(value).html().toLowerCase();
-			//var value = $.trim($(el).get(0).innerHTML.toLowerCase());
 			if (type == "string")
 			{
 				return test_key_string(k, value);
@@ -216,6 +213,7 @@
 				if($(this).val() == "") {
 					$(this).val(options.inputText);
 				}
+				return false;
 			})
 		};
 		
@@ -237,65 +235,64 @@
 		{
 			clearTimeout(timeout);
 			timeout = setTimeout(function () {
-				console.log('start');
-				//console.profile('All');
 				
 				loader('show');
 				
-				var k = get_key();
-				var k_type = (typeof k);
-				
-				var i = 0;
-				
-				
-				
-				if (k != "")
-				{
-					if (typeof score[k] == "undefined")
+				setTimeout(function () {
+					var k = get_key();
+					var k_type = (typeof k);
+					var i = 0;
+					console.log(k);
+					
+					if ($.trim(k) != "")
 					{
-						score[k] = new Array();
-						cache.each(function (i) {
-							if (test_key(k, cache[i], k_type))
+						if (typeof score[k] == "undefined")
+						{
+							score[k] = new Array();
+							cache.each(function (i) {
+								if (test_key(k, cache[i], k_type))
+								{
+									score[k][i] = true;
+								}
+							});
+						}
+					
+						$(el).each(function (i) {
+							if (score[k][i])
 							{
-								score[k][i] = true;
+								select_element(this).show();
+							}
+							else
+							{
+								select_element(this).hide();
 							}
 						});
 					}
-					
-					
-					$(el).each(function (i) {
-						if (score[k][i])
-						{
-							select_element(this).show();
-						}
-						else
-						{
-							select_element(this).hide();
-						}
-					});
-				}
-				else
-				{
-						select_element(el).show();
-				}
+					else
+					{
+							select_element(el).show();
+					}
 				
-				stripe(el);
+					stripe(el);
+				}, options.delay/2);
 				
-				loader('hide');
+				setTimeout( function () { 
+					loader('hide');
+				}, options.delay/2);
 				
-				//console.profileEnd();
-			}, options.delay);
+			}, options.delay/2);
 		}
 		
 		init();
 		
 		$('input[rel="' + options.randomElement + '"]').keydown(function (e) {
 			var keycode = e.keyCode;
-			if (keycode == 9 || keycode == 13 || keycode == 38 || keycode == 40)
+			if(keycode == 17 || keycode == 18 || keycode == 224)
 			{
-				e.preventDefault();
+				specialkey = true;
 			}
-			else
+			
+			if (!(keycode == 9 || keycode == 13 || keycode == 38 || keycode == 40 || keycode == 224) && !specialkey)
 			{
 				qs();
 			}
