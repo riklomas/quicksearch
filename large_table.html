@@ -6,10 +6,8 @@
         <title>rikrikrik - quickSearch jQuery plug-in - Large table</title>
 		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="jquery.quicksearch.js" type="text/javascript" charset="utf-8"></script>
-		<script src="/mint/?js" type="text/javascript"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function () {
-				
 				$('table#large tbody tr').quicksearch({
 					attached: "table#large",
 					position: "before",
@@ -17,17 +15,16 @@
 					labelText: null,
 					inputText: 'Search table'
 				});
-					
-			})			
+			});			
 		</script>
 		
 	    <link rel="stylesheet" href="style.css" type="text/css" media="all" title="" />
 </head>
 
 <body>
-
-
-
+	<form action="#" method="get" id="quicksearch">
+		<p><input type="text" name="qs" value="" id="qs"><input type="submit" value="Go"></p>
+	</form>
 
     <table id="large" cellspacing="0">
     <thead>
