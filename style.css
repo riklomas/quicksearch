@@ -1,55 +1,27 @@
-body {
-	font: 76% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
-}
+body { font: 76% Arial, Verdana, sans-serif; color: #333; padding: 10px 20px; }
+h1 { font-size: 250%; color: #f34105; }
+h1 sup { font-size: 50%; }
+h2 { color: #f34105; font-size: 175%; }
+a { color: #005bd8; }
+.hr hr { display: none; }
+form { margin: 10px 0; }
+table { width: 100%; border-collapse: collapse; }
+thead th { background: #f34105; color: #fff; }
+tbody th { text-align: left; }
+table th, table td { border: 1px solid #ddd; padding: 2px 5px; font-size: 100%; }
+pre { font-size: 130%; background: #f7f7f7; padding: 10px 10px; font-weight: bold; }
+.odd, .r1 { background: #fff; }
+.even, .r2 { background: #f7f7f7; }
+.r3 { background: #ebebeb; }
+.search { font-weight:  bold; }
 
-#rikrikrik {
-	margin-bottom: 0;
-	background: #066;
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-	padding: 0px 2px;
-}
-form {
-	margin: 10px 0;
-}
-table {
-	width: 100%;				
-}
-thead th {
-	background: #ccc;
-}
-tbody th {
-	text-align: left;
-}
-pre {
-	font-size: 130%;
-}
-.odd, .r1 {
-	background: #fff;
-}
-.even, .r2 {
-	background: #eee;
-}
-.r3 {
-	background: #ddd;
-}
-#sorting {
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	width: 200px;
-	margin-left: -100px;
-	border: 2px solid #999;
-	padding: 10px;
-	display:  none;
-	background: #fff;
-	text-align:  center;
-}
-.search {
-	font-weight:  bold;
-}
-form#quicksearch {
-	padding: 1em;
-	border: 1px solid #ccc;
-}
+dt { margin-top: 10px; font-weight: bold;  }
+dd { margin: 0;}
+
+form.quicksearch { padding: 10px; background: #f7f7f7; }
+form.quicksearch input { margin-left: 5px; width: 300px; }
+form.quicksearch img { vertical-align: middle; margin-left: 5px; }
+
+#footer { background: #333; color: #fff; padding: 10px; margin-top: 20px; }
+#footer a { color: #fff; }
+#footer span { margin: 0 2px; color: #666; }

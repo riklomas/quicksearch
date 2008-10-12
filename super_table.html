@@ -9,11 +9,11 @@
 			$(document).ready(function () {
 				$('table#matrix tbody tr th').quicksearch({
 					hideElement: "parent",
-					stripeRowClass: ['r1', 'r2', 'r3'],
 					loaderText: '&nbsp;Loading...',
 					position: 'before',
 					attached: 'table#matrix',
-					labelText: 'search by fluid name:&nbsp;'
+					labelText: 'search by fluid name:',
+					delay: 1000
 				});
 			})			
 		</script>
@@ -23,9 +23,6 @@
 
 	<body id="tools">
 		
-		<form action="#" method="get" id="quicksearch">
-			<p><input type="text" name="qs" value="" id="qs"><input type="submit" value="Go"></p>
-		</form>
 		
 <table id="matrix" cellpadding="0" cellspacing="0">
 <thead>

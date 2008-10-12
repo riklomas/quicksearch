@@ -9,6 +9,8 @@
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function () {				
 				$('table#t1 tbody tr th').quicksearch({
+					position: 'before',
+					attached: '#t1',
 					hideElement: 'parent',
 					stripeRowClass: ['odd', 'even'],
 					labelText: 'Search by the email column only'
@@ -24,6 +26,8 @@
 		<link rel="stylesheet" href="style.css" type="text/css" media="all" title="" />		
 	</head>
 	<body>
+	
+	<h1>Tables</h1>
 	
 	<table id="t1" cellspacing="0">
     <thead>

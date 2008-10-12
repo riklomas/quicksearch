@@ -15,7 +15,7 @@
 			loaderText: 'Loading...',
 			stripeRowClass: null,
 			hideElement: null,
-			delay: 300,
+			delay: 500,
 			focusOnLoad: false,
 			randomElement: 'qs'+Math.floor(Math.random()*1000000)
 		}, options);
@@ -24,33 +24,37 @@
 		var cache;
 		var score = {};
 		var el = this;
-		var stripeRowLength = (options.stripeRowClass == null) ? 0 : options.stripeRowClass.length;
-		var doStripe = (stripeRowLength == 0) ? false : true;
+		var stripeRowLength = (!is_empty(options.stripeRowClass)) ? options.stripeRowClass.length : 0;
+		var doStripe = (stripeRowLength > 0) ? true : false;
+		
+		function is_empty (i) 
+		{
+			return (i == null || i == undefined || i == false) ? true: false;
+		}
 		
 		function get_cache (el) 
 		{
-			cache = $(el).map(function(){
-				return this.innerHTML.toLowerCase().replace(/\n/, '').replace(/\s{2,}/, ' ');
+			cache = $(el).not('.'+options.noResultsClass).map(function(){
+				return strip_html(normalise(this.innerHTML));
 			});
+		}
+		
+		function normalise (i)
+		{
+			return $.trim(i.toLowerCase().replace(/\n/, '').replace(/\s{2,}/, ' '));
 		}
 		
 		function get_key()
 		{
-			var input = $.trim($('input[rel="' + options.randomElement + '"]').val().toLowerCase());
-		
+			var input = strip_html(normalise($('input[rel="' + options.randomElement + '"]').val()));
+			
 			if (input.indexOf(' ') == -1)
 			{
 				return input;
 			}
 			else
 			{
-				var arr = input.split(" ");
-				for(var i in arr) {
-					if(arr[i] == "") {
-						arr.splice(i,1);
-					}
-				}
-				return arr;
+				return input.split(" ");
 			}
 		}
 		
@@ -170,7 +174,7 @@
 		function make_form_label ()
 		{
 			if(!is_empty(options.labelText)) {
-				return '<label for="' + options.inputId + '" '+
+				return '<label for="' + options.randomElement + '" '+
 							'class="' + options.labelClass + '">'
 							+ options.labelText
 							+ '</label> ';	
@@ -181,7 +185,7 @@
 		function make_form_input ()
 		{
 			var val = (!is_empty(options.inputText)) ? options.inputText : ""
-			return '<input type="text" value="' + val + '" rel="' + options.randomElement  + '" class="' + options.inputClass + '" /> ';
+			return '<input type="text" value="' + val + '" rel="' + options.randomElement  + '" class="' + options.inputClass + '" id="'+options.randomElement+'" /> ';
 		}
 		
 		function make_form_loader ()
@@ -192,12 +196,7 @@
 				return '<span id="' + options.loaderId + '" class="' + options.loaderClass + '">' + options.loaderText + '</span>';
 			}
 		}
-		
-		function is_empty (i) 
-		{
-			return (i == null || i == undefined || i == '' || i == 0) ? true: false;
-		}
-		
+			
 		function focus_on_load ()
 		{
 			$('input[rel="' + options.randomElement + '"]').get(0).focus();
@@ -241,9 +240,8 @@
 					var k = get_key();
 					var k_type = (typeof k);
 					var i = 0;
-					console.log(k);
 					
-					if ($.trim(k) != "")
+					if (k != "")
 					{
 						if (typeof score[k] == "undefined")
 						{
@@ -255,21 +253,29 @@
 								}
 							});
 						}
-					
-						$(el).each(function (i) {
-							if (score[k][i])
-							{
-								select_element(this).show();
-							}
-							else
-							{
-								select_element(this).hide();
-							}
-						});
+						
+						if (score[k].length == 0)
+						{
+							select_element(el).hide();
+						}
+						else
+						{
+							$(el).not('.'+options.noResultsClass).each(function (i) {
+								if (score[k][i])
+								{
+									select_element(this).show();
+								}
+								else
+								{
+									select_element(this).hide();
+								}
+							});
+							
+						}
 					}
 					else
 					{
-							select_element(el).show();
+						select_element(el).show();
 					}
 				
 					stripe(el);
