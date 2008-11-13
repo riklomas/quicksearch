@@ -17,7 +17,8 @@
 			hideElement: null,
 			delay: 500,
 			focusOnLoad: false,
-			randomElement: 'qs'+Math.floor(Math.random()*1000000)
+			randomElement: 'qs'+Math.floor(Math.random()*1000000),
+			isFieldset: false
 		}, options);
 		
 		var timeout;
@@ -166,9 +167,10 @@
 		
 		function make_form ()
 		{
-			return '<form action="#" ' + 'id="'+ options.formId + '" ' + 'class="quicksearch">' +
+			var f = (!options.isFieldset) ? 'form' : 'fieldset';
+			return '<'+f+' action="#" ' + 'id="'+ options.formId + '" ' + 'class="quicksearch">' +
 						make_form_label() +	make_form_input() + make_form_loader() +
-					'</form>';
+					'</'+f+'>';
 		}
 		
 		function make_form_label ()
@@ -298,6 +300,6 @@
 			}
 		});
 		
-		$('form.quicksearch').submit( function () { return false; });
+		$('form.quicksearch, fieldset.quicksearch').submit( function () { return false; });
 	}
 })( jQuery );
