@@ -17,7 +17,9 @@
 			hideElement: null,
 			delay: 500,
 			focusOnLoad: false,
-			randomElement: 'qs'+Math.floor(Math.random()*1000000)
+			randomElement: 'qs'+Math.floor(Math.random()*1000000),
+			isFieldset: false,
+			fixWidths: false
 		}, options);
 		
 		var timeout;
@@ -134,6 +136,13 @@
 			}
 		}
 		
+		function fix_widths (el)
+		{
+			$(el).find('td').each(function () {
+				$(this).attr('width', parseInt($(this).css('width')));
+			});
+		}
+		
 		function loader (o) {
 			if(options.loaderId) 
 			{
@@ -166,9 +175,10 @@
 		
 		function make_form ()
 		{
-			return '<form action="#" ' + 'id="'+ options.formId + '" ' + 'class="quicksearch">' +
+			var f = (!options.isFieldset) ? 'form' : 'fieldset';
+			return '<'+f+' action="#" ' + 'id="'+ options.formId + '" ' + 'class="quicksearch">' +
 						make_form_label() +	make_form_input() + make_form_loader() +
-					'</form>';
+					'</'+f+'>';
 		}
 		
 		function make_form_label ()
@@ -218,12 +228,9 @@
 		function init ()
 		{
 			place_form();
-			if(options.focusOnLoad) {
-				focus_on_load();
-			}
-			if(options.inputText != "" && options.inputText != null) {
-				toggle_text();
-			}
+			if (options.fixWidths) fix_widths(el);
+			if (options.focusOnLoad) focus_on_load();
+			if (options.inputText != "" && options.inputText != null) toggle_text();
 			get_cache(el);
 			stripe(el);
 			loader('hide');
@@ -298,6 +305,6 @@
 			}
 		});
 		
-		$('form.quicksearch').submit( function () { return false; });
+		$('form.quicksearch, fieldset.quicksearch').submit( function () { return false; });
 	}
 })( jQuery );
