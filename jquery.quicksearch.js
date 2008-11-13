@@ -18,7 +18,8 @@
 			delay: 500,
 			focusOnLoad: false,
 			randomElement: 'qs'+Math.floor(Math.random()*1000000),
-			isFieldset: false
+			isFieldset: false,
+			fixWidths: false
 		}, options);
 		
 		var timeout;
@@ -135,6 +136,13 @@
 			}
 		}
 		
+		function fix_widths (el)
+		{
+			$(el).find('td').each(function () {
+				$(this).attr('width', parseInt($(this).css('width')));
+			});
+		}
+		
 		function loader (o) {
 			if(options.loaderId) 
 			{
@@ -220,12 +228,9 @@
 		function init ()
 		{
 			place_form();
-			if(options.focusOnLoad) {
-				focus_on_load();
-			}
-			if(options.inputText != "" && options.inputText != null) {
-				toggle_text();
-			}
+			if (options.fixWidths) fix_widths(el);
+			if (options.focusOnLoad) focus_on_load();
+			if (options.inputText != "" && options.inputText != null) toggle_text();
 			get_cache(el);
 			stripe(el);
 			loader('hide');

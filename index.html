@@ -19,7 +19,8 @@
 					attached: 'table#table_example',
 					stripeRowClass: ['odd', 'even'],
 					labelText: 'Search the table',
-					delay: 100
+					delay: 100,
+					fixWidths: true
 				});
 			})
 		</script>
@@ -116,7 +117,6 @@
 					<td>1993/1/24</td>
 					<td>24/1/1993</td>
 				</tr>
-
 
 				<tr>
 					<th>muffins@reno.gov</th>
@@ -263,7 +263,7 @@
 					<td>941-964-1599</td>
 					<td>$1176.48</td>
 					<td>104.212.122.177</td>
-					<td>http://donuts.com</td>
+					<td>http://donutsxxxxxxxxxxxxxxxxx.com</td>
 					<td>18:52</td>
 
 					<td>2000/8/6</td>
@@ -405,8 +405,15 @@ $(search_elements).quicksearch(options);
 			<dt>randomElement</dt>
 			<dd>Adds a random string to quickSearch to differentiate between multiple searches</dd>
 			<dd class="default">default: 'qs'+Math.floor(Math.random()*1000000)</dd>
+			
+			<dt>isFieldset</dt>
+			<dd>If you want a fieldset instead of a form, useful for developers using ASP.NET</dd>
+			<dd class="default">default: false</dd>
+			
+			<dt>fixWidths</dt>
+			<dd>If using a table, fix the widths of table cells to stop row widths jumping when searching</dd>
+			<dd class="default">default: false</dd>
 		</dl>
-
 
 		<div class="hr">
 		    <hr />
