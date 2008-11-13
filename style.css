@@ -17,6 +17,7 @@ pre { font-size: 130%; background: #f7f7f7; padding: 10px 10px; font-weight: bol
 
 dt { margin-top: 10px; font-weight: bold;  }
 dd { margin: 0;}
+.new { color: #f34105; text-transform: uppercase; font-size: 85%; margin-left: 3px; }
 
 form.quicksearch { padding: 10px; background: #f7f7f7; }
 form.quicksearch input { margin-left: 5px; width: 300px; }
