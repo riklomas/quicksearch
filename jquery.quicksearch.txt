@@ -17,6 +17,9 @@
 			hideElement: null,
 			delay: 500,
 			focusOnLoad: false,
+			onBefore: function () { },
+			onAfter: function () { },
+			filter: function (i) { return i },
 			randomElement: 'qs'+Math.floor(Math.random()*1000000),
 			isFieldset: false,
 			fixWidths: false
@@ -244,9 +247,13 @@
 				loader('show');
 				
 				setTimeout(function () {
+					options.onBefore();
+					
 					var k = get_key();
 					var k_type = (typeof k);
 					var i = 0;
+					
+					k = options.filter(k);
 					
 					if (k != "")
 					{
@@ -291,6 +298,8 @@
 				setTimeout( function () { 
 					loader('hide');
 				}, options.delay/2);
+				
+				options.onAfter();
 				
 			}, options.delay/2);
 		}
