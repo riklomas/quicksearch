@@ -6,23 +6,30 @@
 		<title>rikrikrik - quickSearch jQuery plug-in</title>
 		<link rel="stylesheet" href="style.css" type="text/css" media="all" title="" />	
 		<script src="jquery.js" type="text/javascript"></script>
-		<script src="jquery.quicksearch.js" type="text/javascript"></script>
+		<script src="jquery.quicksearch.tidied.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
-				$('ul#list_example li').quicksearch({
+				$('table#table_example tbody tr th').quicksearch({
+					position: 'before',
+					attached: 'table#table_example',
+					stripeRowClass: ['odd', 'even'],
+					labelText: 'Search the table',
+					hideElement: 'parent',
+					delay: 100
+				});
+				
+				
+				var qs = $('ul#list_example li').quicksearch({
 					position: 'before',
 					attached: 'ul#list_example',
 					loaderImg: 'loader.gif'
 				});
 				
-				$('table#table_example tbody tr').quicksearch({
-					position: 'before',
-					attached: 'table#table_example',
-					stripeRowClass: ['odd', 'even'],
-					labelText: 'Search the table',
-					delay: 100
-				});
-			})
+				$('ul#list_example').append('<li>Test</li><li>Loaded with Ajax</li>');
+				
+				qs.reset_cache();
+				
+			});
 		</script>
 	</head>
 	<body>

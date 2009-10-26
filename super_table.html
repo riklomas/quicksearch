@@ -4,11 +4,11 @@
 	<head>
 		<title>Super table</title>
 		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript" src="jquery.quicksearch.js"></script>
+		<script type="text/javascript" src="jquery.quicksearch.tidied.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
-				$('table#matrix tbody tr th').quicksearch({
-					hideElement: "parent",
+				$('table#matrix tbody tr').quicksearch({
+					matched: "th",
 					loaderText: '&nbsp;Loading...',
 					position: 'before',
 					attached: 'table#matrix',
