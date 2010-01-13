@@ -1,33 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>rikrikrik - quickSearch jQuery plug-in</title>
-		<link rel="stylesheet" href="style.css" type="text/css" media="all" title="" />	
-		<script src="jquery.js" type="text/javascript"></script>
-		<script src="jquery.quicksearch.tidied.js" type="text/javascript"></script>
+		<title>quickSearch jQuery plug-in</title>
+		
+		<link rel="stylesheet" href="style.css" type="text/css" media="all" title="" />
+		
+		<script type="text/javascript" src="jquery.js" ></script>
+		<script type="text/javascript" src="jquery.quicksearch.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function () {
-				$('table#table_example tbody tr th').quicksearch({
-					position: 'before',
-					attached: 'table#table_example',
-					stripeRowClass: ['odd', 'even'],
-					labelText: 'Search the table',
-					hideElement: 'parent',
-					delay: 100
+			$(function () {
+				$('input#id_search').quicksearch('table#table_example tbody tr', {
+					selector: 'th'
 				});
 				
+				var qs = $('input#id_search_list').quicksearch('ul#list_example li');
+				$('ul#list_example').append('<li>Loaded with Ajax</li>');
+				qs.cache();
 				
-				var qs = $('ul#list_example li').quicksearch({
-					position: 'before',
-					attached: 'ul#list_example',
-					loaderImg: 'loader.gif'
+				$('input#add_to_list').click(function () {
+					$('ul#list_example').append('<li>Added on click</li>');
+					qs.cache();
 				});
-				
-				$('ul#list_example').append('<li>Test</li><li>Loaded with Ajax</li>');
-				
-				qs.reset_cache();
 				
 			});
 		</script>
@@ -48,7 +42,13 @@
 	    
 	    <h2 id="examples">Examples</h2>
 		<h3>Table example</h3>
-
+		
+		<form action="#">
+			<fieldset>
+				<input type="text" name="search" value="" id="id_search" /> <span class="loading">Loading...</span>
+			</fieldset>
+		</form>
+		
 		<table id="table_example">
 			<thead>
 				<tr>
@@ -291,24 +291,33 @@ $('table#table_example tbody tr').quicksearch({
 </pre></code>
 
 		<h3>List example</h3>
-	
+		
+		<form action="#">
+			<fieldset>
+				<input type="text" name="search" value="" id="id_search_list" /> <span class="loading">Loading...</span>
+			</fieldset>
+		</form>
+		
+		<input type="button" id="add_to_list" value="Add to list">
+		
 		<ul id="list_example">
-      	  <li>Afghanistan</li> 
-	        <li>Albania</li> 
-	        <li>Algeria</li> 
-	        <li>American Samoa</li> 
-	        <li>Andorra</li> 
-	        <li>Angola</li> 
-	        <li>Anguilla</li> 
-	        <li>Antarctica</li> 
-	        <li>Antigua and Barbuda</li> 
-	        <li>Argentina</li> 
-	        <li>Armenia</li> 
-	        <li>Aruba</li> 
-	        <li>Australia</li> 
-	        <li>Austria</li> 
-	        <li>Azerbaijan</li> 
+			<li>Afghanistan</li> 
+			<li>Albania</li> 
+			<li>Algeria</li> 
+			<li>American Samoa</li> 
+			<li>Andorra</li> 
+			<li>Angola</li> 
+			<li>Anguilla</li> 
+			<li>Antarctica</li> 
+			<li>Antigua and Barbuda</li> 
+			<li>Argentina</li> 
+			<li>Armenia</li> 
+			<li>Aruba</li> 
+			<li>Australia</li> 
+			<li>Austria</li> 
+			<li>Azerbaijan</li> 
 		</ul>
+		
 		<p>Example uses following code:</p>
 <code><pre>
 $('ul#list_example li').quicksearch({

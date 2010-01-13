@@ -250,7 +250,6 @@ jQuery(function ($) {
 									select_element(this).hide();
 								}
 							});
-							
 						}
 					}
 					else

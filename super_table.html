@@ -1,28 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 	<head>
 		<title>Super table</title>
 		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript" src="jquery.quicksearch.tidied.js"></script>
+		<script type="text/javascript" src="jquery.quicksearch.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
-				$('table#matrix tbody tr').quicksearch({
-					matched: "th",
-					loaderText: '&nbsp;Loading...',
-					position: 'before',
-					attached: 'table#matrix',
-					labelText: 'search by fluid name:',
-					delay: 1000
+				$("#id_search").quicksearch("table tbody tr", {
+					noResults: '#noresults',
+					stripeRows: ['odd', 'even'],
+					loader: 'span.loading'
 				});
-			})			
+			});
 		</script>
 		<link rel="stylesheet" href="style.css" type="text/css" media="all" title="" />
-	    
 	</head>
 
 	<body id="tools">
-		
+	
+		<form action="#">
+			<fieldset>
+				<input type="text" name="search" value="" id="id_search" /> <span class="loading">Loading...</span>
+			</fieldset>
+		</form>	
 		
 <table id="matrix" cellpadding="0" cellspacing="0">
 <thead>
@@ -38,6 +38,14565 @@
 </thead>
 
 <tbody>
+	<tr id="noresults">
+		<td colspan="6">Noresults</td>
+	</tr>
+	
+<tr>
+<th>Abietic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acetaldehyde</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Acetamide</th>
+<td>3 </td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Acetanilide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acetic Acid, 30%</th>
+
+<td>3 </td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Acetic Acid, Glacial</th>
+<td>4</td>
+
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Acetic Anhydride</th>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Acetoacetic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acetone</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Acetone Cyanohydrin</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Acetonitrile</th>
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acetophenetidin</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acetophenone</th>
+
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Acetyl Bromide</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acetyl Chloride</th>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>3 </td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Acetylacetone</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Acetylene</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acetylene Tetrabromide</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Acetyl-o-Toluidine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Aconitic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acridine</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acrolein</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acrylic Acid</th>
+<td>4</td>
+<td>3 </td>
+
+<td>2</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acrylonitrile</th>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Adipic Acid</th>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>*</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Aero Lubriplate</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Aero Shell 17 Grease</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Aero Shell 1AC Grease</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Aero Shell 750</th>
+
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Aero Shell 7A Grease</th>
+<td>1</td>
+
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>AEROSAFE 2300</th>
+<td>4</td>
+<td>1</td>
+
+<td>4</td>
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>AEROSAFE 2300W</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Aerozene 50 (50%Hydrazine, 50%UDMH)</th>
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Air, Below 200&deg; F</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Alkanesulphonic Acid, Mixed</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Alkazene</th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Allyl Chloride</th>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Aluminum Acetate</th>
+
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Aluminum Bromide</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Aluminum Chlorate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Aluminum Chloride</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Aluminum Ethylate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Aluminum Fluoride</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Aluminum Fluorosilicate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Aluminum Hydroxide</th>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Aluminum Nitrate</th>
+
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Aluminum Oxalate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Aluminum Phosphate</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Aluminum Potassium Sulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Aluminum Salts</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Aluminum Sodium Sulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Aluminum Sulfate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>AMBREX 33</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>AMBREX 830</th>
+
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Amines Mixed (Eg: Allyl, Ethyl, Etc.)</th>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Aminoanthraquinone</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonia + Lithium Metal Solution</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Ammonia Gas, Cold</th>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Ammonia Gas, Hot </th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Ammonia, Liquid</th>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Ammonium Acetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Arsenate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Benzoate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Bicarbonate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Bifluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Bromide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Carbamate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Ammonium Carbonate</th>
+<td>3 </td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Chloride</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Citrate, Dibasic </th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Dichromate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Fluoride</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Fluorosilicate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Formate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Hydroxide, Conc.</th>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Ammonium Iodide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Molybdate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Nitrate</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Oxalate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Perchlorate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Persulfate</th>
+<td>3 </td>
+<td>1</td>
+<td>4</td>
+
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ammonium Phosphate, Dibasic </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Phosphite</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Ammonium Picrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Polysulfide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Salts</th>
+
+<td>3 </td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Ammonium Sulfamate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Sulfate</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Sulfide</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Sulfite</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Thiocyanate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Ammonium Thioglycollate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Thiosulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Tungstate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ammonium Valerate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Amyl Acetate</th>
+<td>4</td>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Amyl Alcohol </th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Amyl Borate</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Amyl Chloride</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Amyl Chloronaphthalene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Amyl Naphthalene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Amyl Nitrate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Amyl Nitrite</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Amyl Propionate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Amylcinnamic Aldehyde</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>AN-0-3 Grade M </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>AN-0-366 </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>AN-0-6 </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Anderol (Diester)</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>ANG-25 (Diester Base)</th>
+
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>ANG-25 (Glyceral Ester)</th>
+<td>1</td>
+
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Aniline</th>
+<td>2</td>
+<td>2</td>
+
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Aniline Dyes</th>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Aniline Hydrochloride</th>
+<td>2</td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Aniline Oils</th>
+<td>3 </td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+
+</tr>
+
+<tr>
+<th>Animal Fats (Lard)</th>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Anisole</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Anisoyl Chloride</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ansul Ether 161 or 181 </th>
+<td>4</td>
+
+<td>3 </td>
+<td>3 </td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Anthracene</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Anthranilic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Anthraquinone</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Antimony Pentachloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Antimony Pentafluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Antimony Sulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Antimony Tribromide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Antimony Trichloride</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Antimony Trifluoride</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Antimony Trioxide</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>AN-VV-0-366B Hydraulic </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Aqua Regia </th>
+<td>2</td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+
+</tr>
+
+<tr>
+<th>Arachidic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Argon</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>AROCLOR 1248 </th>
+
+<td>1</td>
+<td>2</td>
+<td>3 </td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>AROCLOR 1254 </th>
+<td>1</td>
+
+<td>2</td>
+<td>4</td>
+<td>3 </td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>AROCLOR 1260</th>
+<td>1</td>
+<td>2</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Aromatic Fuels</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Arsenic Acid</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Arsenic Pentafluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Arsenic Trichloride</th>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Arsenic Trioxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Arsenic Trisulfide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Arsine</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ascorbic Acid</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Askarel Transformer Oil </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Aspartic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Asphalt </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Aspirin</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>ASTM Oil No.1 </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>ASTM Oil No.2 </th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>ASTM Oil No.3</th>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>ASTM Oil No.4 </th>
+<td>1</td>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>ASTM Oil No.5 </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>ASTM Reference Fuel A </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>ASTM Reference Fuel B </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>ASTM Reference Fuel C </th>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>ASTM Reference Fuel D </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>AUREX 903R </th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Automatic Transmission Fluid</th>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Automotive Brake Fluid</th>
+<td>4</td>
+<td>1</td>
+
+<td>3 </td>
+<td>3 </td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>AXAREL 9100</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Azobenzene</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>BARDOL B </th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Barium Carbonate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Barium Chlorate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Barium Chloride</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Barium Cyanide</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Barium Hydroxide</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Barium Iodide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Barium Nitrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Barium Oxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Barium Peroxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Barium Salts</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Barium Sulfate</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Barium Sulfide</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>BAYOL 35 </th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>BAYOL D </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Benzaldehyde</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Benzamide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Benzanthrone</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzene</th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Benzene Hexachloride (BHC)</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzenesulfonic Acid</th>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Benzidine</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzil </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzilic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzoic Acid</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Benzoin</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzonitrile</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzophenone</th>
+
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Benzotrichloride</th>
+<td>1</td>
+
+<td>1</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzotrifluoride</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzoyl Chloride</th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+
+<td>*</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Benzoyl Peroxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzyl Acetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Benzyl Alcohol </th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Benzyl Benzoate</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Benzyl Bromide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzyl Chloride</th>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Benzyl Salicylate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Benzylamine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Beryllium Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Beryllium Fluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Beryllium Oxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Beryllium Sulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Bismuth Nitrate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Bismuth Oxychloride</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Bismuth Subcarbonate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Bittern</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Black Liquor</th>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Black Point 77 </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>3 </td>
+
+</tr>
+
+<tr>
+<th>Blast-Furnace Gas</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Bleach Liquor</th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Bone Oil </th>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Borane</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Borax </th>
+<td>1</td>
+<td>1</td>
+
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Bordeaux Mixture</th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Boric Acid</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Boric Oxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Borneol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Bornyl Acetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Bornyl Formate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Boron Fluids (HEF)</th>
+<td>1</td>
+
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Boron Phosphate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Boron Tribromide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Boron Trichloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Boron Trifluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Boron Trioxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>BRAYCO 885 (MIL-L-6085A)</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>BRAYCO 910</th>
+
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Brine</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Bromic Acid</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Bromine</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Bromine Pentafluoride</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Bromine Trifluoride</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Bromine, Anhydrous</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Bromobenzene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Bromochloromethane</th>
+
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Bromochloropropane</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Bromochlorotrifluoroethane (HALOTHANE)</th>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Bromoform </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Bromotrifluoroethylene (BFE)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Bromotrifluoromethane (FC 13B1)</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Buffered Oxide Etchants (BOE)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Bunker C </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Butane</th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Butyl Acetyl Ricinoleate</th>
+<td>1</td>
+
+<td>1</td>
+<td>2</td>
+<td>*</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Butyl Amine</th>
+<td>4</td>
+<td>4</td>
+
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Butyl Benzoate</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Butyl Benzyl Phthalate (BBP)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Butyl CARBITOL </th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Butyl CELLOSOLVE </th>
+<td>4</td>
+<td>2</td>
+<td>3 </td>
+<td>*</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Butyl CELLOSOLVE Acetate</th>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Butyl Ether</th>
+
+<td>4</td>
+<td>3 </td>
+<td>3 </td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Butyl Lactate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Butyl Laurate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Butyl Oleate</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+
+<td>*</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Butyl Stearate</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>*</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Butylene</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Butyraldehyde</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Butyric Acid</th>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Butyric Anhydride</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Butyrolactone</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Butyroyl Chloride</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cadmium Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cadmium Cyanide</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cadmium Nitrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Cadmium Oxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cadmium Sulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cadmium Sulfide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcine Liquors</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Calcium Nitrate</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Calcium Acetate</th>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Calcium Arsenate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Bisulfite</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>3 </td>
+
+</tr>
+
+<tr>
+<th>Calcium Bromide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Carbide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Carbonate</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Calcium Chlorate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Chloride</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Calcium Chromate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Cyanamide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Cyanide</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Calcium Fluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Gluconate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Hydride</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Hydrogen Sulfite</th>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Calcium Hydrosulfide</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Hydroxide</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Calcium Hypochlorite</th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Calcium Hypophosphite</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Calcium Nitrate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Calcium Oxalate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Oxide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Permanganate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Peroxide</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Phosphate, Monobasic </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Propionate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Salts</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Calcium Silicate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Stearate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Sulfamate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Sulfate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Sulfide</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Calcium Sulfite</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Calcium Thiocyanate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Calcium Thiosulfate</th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Calcium Tungstate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Caliche Liquors</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Camphene</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Camphor</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Camphoric Acid</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cane Sugar Liquors</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Capric Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Caproic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Caproic Aldehyde</th>
+<td>4</td>
+<td>2</td>
+<td>*</td>
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Caprolactam </th>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Carbamate</th>
+
+<td>1</td>
+<td>2</td>
+<td>3 </td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Carbazole</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Carbitol </th>
+<td>2</td>
+<td>2</td>
+
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Carbolic Acid</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Carbon Dioxide, Dry </th>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Carbon Dioxide, Wet </th>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Carbon Disulfide</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Carbon Fluorides</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Carbon Monoxide</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Carbon Tetrabromide</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Carbon Tetrachloride</th>
+<td>1</td>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Carbonic Acid</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Caro's Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Casein</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Castor Oil </th>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Caustic Lime</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Caustic Potash </th>
+
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Caustic Soda </th>
+<td>4</td>
+
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>CELLOSOLVE </th>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>CELLOSOLVE Acetate</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>CELLUGUARD </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Cellulose Acetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>CELLULUBE (Phosphate Esters)</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>CELLULUBE A60</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>CELLUTHERM 2505A </th>
+
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Cement, Portland</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ceric Sulfate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cerous Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cerous Fluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cerous Nitrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Cetane (Hexadecane)</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Cetyl Alcohol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chaulmoogric Acid</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chloral </th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chloramine</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chlordane</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Chlorextol </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Chloric Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Chlorinated Naphthalene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Chlorinated Salt Brine</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chlorinated Solvents</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Chlorine (Dry)</th>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Chlorine (Wet)</th>
+<td>1</td>
+<td>2</td>
+
+<td>3 </td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Chlorine Dioxide</th>
+<td>2</td>
+<td>3 </td>
+<td>4</td>
+
+<td>*</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Chlorine Trifluoride</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Chlorine Water</th>
+<td>1</td>
+<td>2</td>
+<td>3 </td>
+<td>4</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Chloroacetaldehyde</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chloroacetic Acid</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Chloroacetone</th>
+
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Chloroacetyl Chloride</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chlorobenzaldehyde</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chlorobenzene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Chlorobromo Methane</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Chlorobutadiene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Chlorodifluoroethane (FC 142b)</th>
+<td>4</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chlorodifluoromethane (FC 22)</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Chlorododecane</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Chloroform </th>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Chlorohydrin</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chloronitrobenzene (p-)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chloronitroethane</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Chloropentafluoroethane (FC 115)</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Chloropicrin</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chloroprene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Chlorosulfonic Acid</th>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Chlorotetrafluoroethane (FC 124)</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chlorotoluene Sulfonic Acid</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chlorotrifluoromethane (FC 13)</th>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Chlorotritluoroethylene (CTFE)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chlorox </th>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Chloroxylenol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cholesterol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Choline</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chrome Alum </th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chrome Plating Solution</th>
+<td>1</td>
+<td>2</td>
+
+<td>4</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Chromic Acid</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Chromic Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chromic Fluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Chromic Hydroxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chromic Nitrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chromic Oxide</th>
+
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chromic Phosphate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chromic Sulfate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chromium Potassium Sulfate</th>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Chromyl Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cinnamic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Cinnamic Alcohol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cinnamic Aldehyde</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Circo Light Process Oil </th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Citric Acid</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>City Service 65,120,250</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>City Service Kool Motor Oil No.140</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>City Service Pacemaker No.2 </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>CLOROX </th>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Coal Tar</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Cobaltous Acetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cobaltous Bromide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cobaltous Chloride</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Cobaltous Linoleate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cobaltous Sulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Coconut Oil </th>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Cod Liver Oil </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Coke Oven Gas</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>CONVELEX 10</th>
+<td>1</td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>COOLANOL </th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Copper Acetate</th>
+<td>4</td>
+
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Copper Carbonate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Copper Chloride</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Copper Cyanide</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Copper Gluconate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Copper Naphthenate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Copper Nitrate</th>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Copper Salts</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Copper Sulfate</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Corn Oil </th>
+<td>1</td>
+<td>3 </td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Cottonseed Oil </th>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Creosote-Coal Tar</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Cresol (Methyl Phenol)</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Cresylic Acids</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Crotonaldehyde</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Crotonic Acid</th>
+
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Crude Oil (Asphalt Base)</th>
+<td>1</td>
+
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Cumene</th>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Cumene Hydroperoxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cuminic Aldehyde</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cupric Sulfate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Cutting Oil </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Cyanamide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cyanoacetic Acid</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cyanogen Chloride</th>
+<td>2</td>
+
+<td>3 </td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cyanohydrin</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cyanuric Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cyclohexane</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Cyclohexanol </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Cyclohexanone</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Cyclohexene</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cyclohexylamine</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cyclopentadiene</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cyclopentane</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Cyclopropane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>DDT (Dichlorodiphenyltrichloroethane)</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Decahydronaphthalene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Deionized Water</th>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>DELCO Brake Fluid</th>
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>3 </td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Detergent Solutions</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Developing Fluids</th>
+<td>1</td>
+
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>DEXTRON </th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Diacetone</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Diacetone Alcohol (Diacetol)</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Diallyl Phthalate (DAP)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Diamylamine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>DIAZINON </th>
+<td>2</td>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Dibenzyl Ether</th>
+
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dibenzyl Sebacate</th>
+<td>2</td>
+
+<td>2</td>
+<td>4</td>
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Diborane</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dibromodifluoromethane</th>
+<td>*</td>
+<td>2</td>
+<td>4</td>
+
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dibromoethylbenzene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Dibromotetrafluoroethane (FC 114B2)</th>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Dibutyl Ether</th>
+<td>3 </td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Dibutyl Phthalate (DBP)</th>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Dibutyl Sebacate</th>
+
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Dibutyl tert-Peroxide</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dicapryl Phthalate</th>
+<td>2</td>
+<td>2</td>
+
+<td>4</td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Dichloroacetic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dichlorobutane</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Dichlorobutene</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Dichlorodiethyl Sulfide</th>
+<td>*</td>
+<td>1</td>
+<td>*</td>
+<td>1</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dichlorodifluoromethane (FC 12)</th>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Dichloroethylene</th>
+
+<td>2</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dichlorofluoroethane (FC 141b)</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dichlorofluoromethane (FC 21)</th>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dichlorohydrin</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dichloroisopropyl Ether</th>
+<td>3 </td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Dichlorophenol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Dichloropropene</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dichlorosilane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dichlorotetrafluoroethane (FC 114)</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Dichlorotrifluoroethane (FC 123)</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dicyclohexylamine</th>
+<td>4</td>
+<td>4</td>
+
+<td>3 </td>
+<td>*</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Dieldrin (HEOD)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diesel Oil </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Diester Lubricant (MIL-L-78O8)</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Diester Synthetic Lubricating Oils</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Diethanolamine (DEA)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diethyl Carbonate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diethyl Ether</th>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Diethyl Phthalate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diethyl Sebacate</th>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Diethyl Sulfate</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diethylamine</th>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Diethylbenzene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Diethylene Glycol </th>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Diethylene Glycol Butyl Ether</th>
+
+<td>3 </td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Diethylene Glycol Methyl Ether</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diethylenetriamine</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diethylhexyl Phthalate</th>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Diethylhexyl Sebacate</th>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>3 </td>
+
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Diethylhexylamine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Difluoroethane (FC 152a)</th>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diglycol Chloroformate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diglycolic Acid</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dihydroxydiphenylsulfone</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diisobutyl Ketone</th>
+<td>4</td>
+<td>1</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diisobutylene</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Diisooctyl Sebacate (DIOS)</th>
+<td>2</td>
+<td>3 </td>
+<td>3 </td>
+<td>3 </td>
+
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Diisopropyl Ketone</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Diisopropylbenzene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Diisopropylidene Acetone</th>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Dimethyl Acetamide (DMAC)</th>
+
+<td>4</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dimethyl Ether</th>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Dimethyl Heptanol </th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dimethyl Hydrazine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dimethyl Phthalate</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Dimethyl Sulfoxide (DMSO)</th>
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Dimethyl Terephthalate (DMT)</th>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dimethylamine (DMA)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dimethylaniline</th>
+
+<td>4</td>
+<td>2</td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Dimethylformamide (DMF)</th>
+<td>4</td>
+
+<td>2</td>
+<td>3 </td>
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Dinitrotoluene (DNT)</th>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Dioxane</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Dioxolane</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Dipentene</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>3 </td>
+
+</tr>
+
+<tr>
+<th>Diphenyl </th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Diphenyl Oxide</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Diphenylamine (DPA)</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Diphenylene Oxide</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Disilane</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dodecylbenzene</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dow Chemical 50-4, ET588 </th>
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>*</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Dow Chemical ET378 </th>
+<td>3 </td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Dow Corning 1208,4050,6620,F-60,Xf-60</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Dow Corning 3,4,11 </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Dow Corning 5,33,44,200,220,510,550,705,710</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Dow Corning 55 </th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Dow Corning F-61 </th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>DOW GUARD </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>DOWTHERM 209 </th>
+<td>3 </td>
+<td>1</td>
+<td>3 </td>
+<td>3 </td>
+
+<td>3 </td>
+</tr>
+
+<tr>
+<th>DOWTHERM A </th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>DOWTHERM E </th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Drinking Water</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Dry Cleaning Fluids</th>
+
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>DTE Light Oil </th>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>ELCO 28 EP Lubricant </th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Epichlorohydrin</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Epoxy Resins</th>
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Erucic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Esam-6 Fluid</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>ESSO Fuel 208 </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>ESSO Golden Gasoline</th>
+
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>ESSO Motor Oil </th>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>ESSO Transmission Fluid, Type A </th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>ESSO WS2812 (MIL-L-7808A)</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>ESSO XP9O-EP Lubricant </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>ESSTIC 42,43</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Ethane</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Ethanethiol+D30</th>
+<td>2</td>
+<td>3 </td>
+<td>4</td>
+<td>3 </td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethanolamine (MEA)</th>
+
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Ether</th>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Ethyl Acetate</th>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Ethyl Acetoacetate</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Ethyl Acrylate</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Ethyl Alcohol (Ethanol)</th>
+<td>3 </td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Ethyl Aluminum Dichloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethyl Benzene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ethyl Benzoate</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ethyl Bromide</th>
+<td>1</td>
+
+<td>4</td>
+<td>2</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ethyl Butyrate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethyl Cellulose</th>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+
+<td>3 </td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Ethyl Chloride</th>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ethyl Chlorocarbonate</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Ethyl Cyanide</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethyl Dibromide</th>
+<td>1</td>
+<td>3 </td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethyl Dichloride</th>
+
+<td>1</td>
+<td>3 </td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethyl Ether</th>
+<td>4</td>
+
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Ethyl Formate</th>
+<td>1</td>
+<td>2</td>
+
+<td>4</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ethyl Hexanol </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ethyl Isovalerate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethyl Lactate (EL)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Ethyl Mercaptan</th>
+<td>2</td>
+<td>*</td>
+<td>4</td>
+<td>3 </td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethyl Nitrite</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethyl Oxalate</th>
+
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Ethyl Pentachlorobenzene</th>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Ethyl Silicate (TEOS)</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ethyl Tertiary Butyl Ether</th>
+<td>2</td>
+<td>3 </td>
+<td>3 </td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethylamine</th>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethylcyclopentane</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Ethylene</th>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ethylene Chloride</th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Ethylene Chlorohydrin</th>
+
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Ethylene Cyanohydrin</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethylene Dibromide</th>
+<td>1</td>
+<td>3 </td>
+
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Ethylene Dichloride</th>
+<td>1</td>
+<td>3 </td>
+<td>4</td>
+
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Ethylene Glycol </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ethylene Glycol Butyl Ether</th>
+<td>4</td>
+<td>2</td>
+<td>3 </td>
+<td>*</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Ethylene Glycol Butyl Ether Acetate</th>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Ethylene Glycol Ethyl Ether Acetate (EGMEEA)</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Ethylene Oxide</th>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Ethylene Trichloride</th>
+<td>1</td>
+
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Ethylenediamine</th>
+<td>4</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Ethylethoxy-3-Propionate (EEP)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethylhexyl Acrylate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethylmorpholine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Ethylmorpholine Stannous Octotate (50/50 mixture)</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ethylsulfuric Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>F 60 Fluid</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>F 61 Fluid</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Fatty Acids</th>
+<td>1</td>
+<td>3 </td>
+
+<td>2</td>
+<td>3 </td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 11 (CFC)(Trichlorofluoromethane)</th>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>FC 112 </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>FC 113 (CFC)(Trichlorotrifluoroethane)</th>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>FC 114 (CFC)(Dichlorotetrafluoroethane)</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>FC 114B2 (Dibromotetrafluoroethane)</th>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 115 (CFC)(Chloropentafluoroethane)</th>
+
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 116 (FC)(Hexafluoroethane)</th>
+<td>2</td>
+
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 12 (CFC)(Dichlorodifluoromethane)</th>
+<td>2</td>
+<td>2</td>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>FC 123 (HCFC)(Dichlorotrifluoroethane)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 124 (CFC)(Chlorotetrafluoroethane)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 125 (HFC)(Pentafluoroethane)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>FC 13 (CFC)(Chlorotrifluoromethane)</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>FC 134a (HFC)(1,1,1,2-Tetrafluoroethane)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 13B1 (FC)(Bromotrifluoromethane)</th>
+
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>FC 14 (FC)(Tetrafluoromethane)</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 141b (HCFC)(Dichlorofluoroethane)</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 142b (HCFC)(Difluorochloroethane)</th>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 143a (HFC)(1,1,1-Trifluoroethane)</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>FC 152a (HCFC)(Difluoroethane)</th>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>FC 152b </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 21 (CFC)(Dichlorofluoromethane)</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 218 </th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 22 (HCFC)(Chlorodifluoromethane)</th>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>FC 23 (HFC)(Fluoroform)</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 31 </th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 32 </th>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 43 (Heptacosofluorotributylamine)</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>FC 502 </th>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC 75 </th>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC BF </th>
+
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC C316 </th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC C318 (Octafluoro-tetraethylene)</th>
+<td>2</td>
+<td>1</td>
+
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC PCA </th>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC TA </th>
+<td>3 </td>
+<td>2</td>
+<td>1</td>
+<td>3 </td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC TC </th>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>FC TMC </th>
+<td>1</td>
+<td>3 </td>
+<td>2</td>
+<td>3 </td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC T-P35 </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FC T-WD602 </th>
+
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ferric Acetate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ferric Ammonium Sulfate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ferric Chloride</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ferric Hydroxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ferric Nitrate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Ferric Sulfate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Ferrous Ammonium Sulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ferrous Chloride</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ferrous Iodide</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ferrous Sulfate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Fish Oil </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Fluoboric Acid</th>
+<td>*</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Fluorine</th>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>4</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>FLUORINERT (FC 70)</th>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Fluorobenzene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Fluoroform (FC 23)</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>FLUOROLUBE </th>
+<td>2</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Fluorophosphoric Acid, Anhydrous</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Fluosilicic Acid</th>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Fluosulfonic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>FOMBLIN </th>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Formaldehyde</th>
+<td>1</td>
+<td>2</td>
+<td>3 </td>
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Formamide</th>
+<td>3 </td>
+<td>1</td>
+<td>3 </td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Formic Acid (88%)</th>
+
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Fuel Oil </th>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Fumaric Acid</th>
+<td>1</td>
+<td>2</td>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Furaldehyde</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Furan</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Furfural </th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Furfuraldehyde</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Furfuryl Alcohol </th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Furoic Acid</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Furyl Carbinol </th>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>FYRQUEL 90,1OO,150,220,300,500,550</th>
+<td>1</td>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>FYRQUEL A60</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>1</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>GALDEN </th>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Gallic Acid</th>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Gasoline</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Germanium Tetrahydride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Glauber's Salt </th>
+
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Gluconic Acid</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Glucose</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Glutamic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Glycerol </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Glycerophosphoric Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Glycidol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Glycols</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Green Sulfate Liquor</th>
+
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>GULF ENDURANCE OILS </th>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>HALOTHANE (Bromochlorotrifluoroethane)</th>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>HALOWAX OIL </th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Heavy Water</th>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>HEF-2 (Trialkyl Pentaborane)</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Helium </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Heptachlor</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Heptanal </th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Heptanoic Acid</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hexachloroacetone</th>
+<td>4</td>
+<td>1</td>
+
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hexachlorobutadiene</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hexachloroethane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hexaethyl Tetraphosphate (HETP)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Hexafluoroethane (FC 116)</th>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hexamethyldisilizane (HMDS)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hexamethylenediamine</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hexamethylenetetramine</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hexyl Acetate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hexyl Alcohol </th>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Hexylene Glycol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hexylresorcinol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>High Viscosity Lubricant H2 </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>High Viscosity Lubricant U4 </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Hydraulic Oils (Petroleum, Aircraft)</th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Hydraulic Oils (Synthetic Base)</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hydrazine</th>
+<td>4</td>
+<td>1</td>
+
+<td>2</td>
+<td>3 </td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Hydrazine Dihydrochloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hydrazine Hydrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hydriodic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Hydrobromic Acid</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Hydrochloric Acid (37%) (Hot)</th>
+<td>1</td>
+<td>3 </td>
+<td>4</td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Hydrochloric Acid, Conc.</th>
+
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Hydrocyanic Acid</th>
+<td>1</td>
+
+<td>1</td>
+<td>2</td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Hydrofluoric Acid (49%)</th>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Hydrofluoric Acid, Anhydrous</th>
+<td>1</td>
+<td>3 </td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Hydrofluoric Acid, Conc. (Hot)</th>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Hydrofluosilicic Acid</th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Hydrogen</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Hydrogen Bromide, Anhydrous</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hydrogen Chloride, Anhydrous</th>
+
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hydrogen Fluoride, Anhydrous</th>
+<td>4</td>
+
+<td>2</td>
+<td>*</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hydrogen Iodide, Anhydrous</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hydrogen Peroxide (36%)</th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Hydrogen Selenide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hydrogen Sulfide</th>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>3 </td>
+
+</tr>
+
+<tr>
+<th>HYDROLUBE </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Hydroquinone</th>
+<td>2</td>
+<td>4</td>
+<td>3 </td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Hydroxyacetic Acid</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hydroxycitronellal </th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hydroxyethylenediamine</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Hydyne</th>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>HYJET </th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Hypochlorous Acid</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Indole</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>INDUSTRON </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Iodic Acid</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Iodine</th>
+<td>1</td>
+
+<td>2</td>
+<td>2</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Iodine pentafluoride</th>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Iodoform </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isoamyl Acetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isoamyl Butyrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Isoamyl Valerate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isobutane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isobutene</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isobutyl Acetate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isobutyl Acrylate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isobutyl Alcohol </th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+
+<td>1</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Isobutyl Chloride</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isobutyl Ether</th>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Isobutyl n-Butyrate</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Isobutyraldehyde</th>
+<td>4</td>
+<td>2</td>
+<td>3 </td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isobutyric Acid</th>
+
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isodecanol </th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isododecane</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Isoeugenol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isooctane</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Isopentane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Isophorone</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Isopropyl Acetate</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Isopropyl Alcohol (IPA)</th>
+
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Isopropyl Chloride</th>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Isopropyl Ether</th>
+<td>4</td>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Isopropylamine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Isovaleric Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>JIS Lube Oil #1 </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>JP-10</th>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>JP-3 (MIL-J-5624)</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>JP-4 (MIL-J-5624)</th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>JP-5 (MIL-J-5624)</th>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>JP-6 (MIL-J-25656)</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>JP-8 (MIL -T-83133)</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>JP-9 (MIL-F-81912)</th>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>JPX (MIL-F-25604)</th>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>KEL-F Liquids</th>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Kerosene</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Lacquer Solvents</th>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Lacquers</th>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Lactams (Amino Acids)</th>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>*</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Lactic Acid (Cold)</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Lactic Acid (Hot)</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Lard (Animal Fats)</th>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Lauric Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lavender Oil </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Lead Acetate</th>
+
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Lead Arsenate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lead Azide</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lead Bromide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lead Carbonate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lead Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Lead Chromate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lead Dioxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lead Linoleate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lead Naphthenate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lead Nitrate</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Lead Oxide, Red</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ligroin</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Lime Bleach </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Lime-Sulfur Solution</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>LINDOL Hydraulic Fluid</th>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Linoleic Acid</th>
+
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Linseed Oil </th>
+<td>1</td>
+
+<td>3 </td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Liquid Oxygen</th>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Liquified Petroleum Gas (LPG)</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Liquor</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lithium Bromide, Brine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Lithium Carbonate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lithium Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lithium Citrate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lithium Hydroxide</th>
+<td>3 </td>
+
+<td>1</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lithium Hypochlorite</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lithium Nitrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lithopone</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Lubricating Oils, Diester</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Lubricating Oils, Petroleum </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Lye</th>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Magnesium Chloride</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Magnesium Hydroxide</th>
+<td>2</td>
+
+<td>1</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Magnesium Salts</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Magnesium Sulfate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Magnesium Sulfite</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>MALATHION </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Maleic Acid</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Maleic Anhydride</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Maleic Hydrazide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Malic Acid</th>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Mandelic Acid</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Manganese Acetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Manganese Carbonate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Manganese Dioxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Manganese Gluconate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Manganese Hypophosphite</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Manganese Linoleate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Manganous Chloride</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Manganous Phosphate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Manganous Sulfate, Aqueous</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Mannitol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>m-Chloroaniline</th>
+<td>3 </td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>m-Chlorobenzotrifluoride</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>MEA (Ethanolamine)</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Mercaptobenzothiazole (MBT)</th>
+
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Mercuric Acetate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Mercuric Chloride</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Mercuric Cyanide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Mercuric Iodide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Mercuric Nitrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Mercuric Sulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Mercurous Nitrate, Hydrated</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Mercury </th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Mercury Fulminate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Mercury Vapor</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Mesityl Oxide</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Metaldehyde</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methacrylic Acid</th>
+<td>3 </td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Methane</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Methanethiol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methoxychlor</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Abietate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Acetate</th>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Methyl Acetoacetate</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Methyl Acrylate</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Methyl Alcohol (Methanol)</th>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Methyl Anthranilate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Benzoate</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Methyl Bromide</th>
+
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Methyl Butyl Ketone</th>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Methyl Carbonate</th>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Methyl CELLOSOLVE </th>
+<td>4</td>
+<td>2</td>
+<td>3 </td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Methyl Cellulose</th>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Methyl Chloride</th>
+<td>2</td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Methyl Chloroacetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Chloroform </th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Methyl Chloroformate</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Methyl Chlorosilane</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Cyclohexanone</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Ether</th>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Methyl Ethyl Ketone (MEK)</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Methyl Ethyl Ketone Peroxide</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Methyl Formate</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Hexyl Ketone</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Iodide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Isobutyl Ketone (MIBK)</th>
+<td>4</td>
+
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Methyl Isocyanate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Isopropyl Ketone</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Methyl Lactate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Mercaptan</th>
+<td>*</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Methyl Methacrylate</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Methyl n-Amylketone</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Oleate</th>
+
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Methyl Phenylacetate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Salicylate</th>
+<td>*</td>
+<td>2</td>
+
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methyl Tertiary Butyl Ether (MTBE)</th>
+<td>4</td>
+<td>3 </td>
+<td>3 </td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methylacetophonone</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methylal </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Methylallyl Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methylamine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methylamyl Acetate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methylamyl Alcohol </th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methylbenzyl Alcohol </th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methylcyclopentane</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Methylene Bromide</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>*</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Methylene Chloride</th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Methylene Iodide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methylpentadiene</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methylpyrrolidine</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Methylsulfuric Acid</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>MIL-F-25558 (RJ-1)</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>MIL-F-25656 (JP-6)</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>MIL-F-81912 (JP-9)</th>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>MIL-F-82522 (RJ-4)</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>MIL-H-8446 (MLO-8515)</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Milk </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>MIL-L-23699 LUBRICANTS </th>
+
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>MIL-L-7808 LUBRICANTS </th>
+<td>1</td>
+
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>MIL-R-25576 (RP-1)</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>MIL-S-3136 Type I Fuel </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>MIL-S-3136 Type II Fuel </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>MIL-S-3136 Type III Fuel </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>MIL-S-3136 Type IV Oil, High Swell </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>MIL-S-3136 Type IV Oil, Low Swell </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>MIL-S-3136 Type V Oil, Medium Swell </th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>MIL-T-5624 (JP-3, JP-4, JP-5)</th>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>MIL-T-83133 (JP-8)</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Mineral Oil </th>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Mixed Acid Etchants</th>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>MLO-7277, 7557 </th>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+<td>3 </td>
+
+</tr>
+
+<tr>
+<th>MLO-8200, 8515 (MIL-H-8446)</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>MOBIL DELVAC 1100,1110,1120,1130</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>MOBIL HF </th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>MOBIL NIVAC 20,30</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>MOBIL THERM 600</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>MOBILJET II Lubricant </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Molybdenum Disulfide Grease</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Monomethyl Hydrazine</th>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Monomethylaniline</th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Monovinyl Acetylene</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>MOPAR BRAKE FLUID </th>
+
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>3 </td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Myristic Acid</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>N,N-Diethylaniline</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Naphtha </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Naphthalene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Naphthalenesulfonic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Naphthenic Acid</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Naphthylamine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Natural Gas</th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>n-Butyl Acetate</th>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>n-Butyl Acrylate</th>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>*</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>n-Butyl Alcohol </th>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>n-Butyl Butyrate</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>n-Butyl Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>n-Butyl Methracrylate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>n-Decane</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>n-Dibutylamine</th>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>n-Dodecyl Mercaptan</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Neatsfoot Oil </th>
+<td>1</td>
+<td>2</td>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Neon</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Neville-Winter Acid</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>n-Heptane</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+
+</tr>
+
+<tr>
+<th>n-Hexadecane (Cetane)</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>n-Hexaldehyde</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>n-Hexane</th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Niacinamide</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nickel Acetate</th>
+<td>4</td>
+<td>1</td>
+
+<td>2</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Nickel Ammonium Sulfate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nickel Chloride</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Nickel Cyanide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Nickel Nitrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nickel Sulfate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Nicotine</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nitric Acid (0-50%)</th>
+<td>1</td>
+
+<td>3 </td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Nitric Acid (70%)</th>
+<td>2</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Nitric Acid, Red Fuming </th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Nitrobenzene</th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Nitrocellulose</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Nitroethane</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Nitrogen</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Nitrogen Dioxide</th>
+
+<td>4</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nitrogen Oxides</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nitrogen Tetroxide</th>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Nitrogen Trifluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nitroglycerin</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nitromethane</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Nitrosyl Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nitrosylsulphuric Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nitrous Acid</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nitrous Oxide</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>n-Methyl 2-Pyrrolidone (NMP)</th>
+<td>2</td>
+<td>2</td>
+
+<td>*</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>NMP (n-Methyl 2-Pyrrolidone)</th>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>n-Octadecane</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>n-Octane</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>n-Octyl Acetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>n-Octyl Alcohol </th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>n-Octyl Chloride</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Nonane</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>n-Pentane</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>n-Propyl Acetate</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>n-Propyl Acetone</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>n-Propyl Nitrate</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>n-Propyl Propionate</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>n-Propylamine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>n-Propylbenzene</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>n-Valeraldehyde</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>o-Chlorophenol </th>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Octachloro Toluene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Octafluorocyclobutane</th>
+<td>2</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Octafluoropropane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Octanal </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>o-Dichlorobenzene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Olefins</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Oleic Acid</th>
+<td>2</td>
+
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Oleum (Fuming Sulfuric Acid)</th>
+<td>1</td>
+<td>4</td>
+
+<td>3 </td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Oleyl Alcohol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Olive Oil </th>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>3 </td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>o-Nitrotoluene</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Orthochloro Ethyl Benzene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>o-sec-Amylphenol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Oxalic Acid</th>
+
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Oxygen, Gas (Hot)</th>
+<td>3 </td>
+
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Oxygen, Liquid</th>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ozonated Deionized Water</th>
+<td>1</td>
+<td>2</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ozone</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Paint Thinner-DUCO </th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Palmitic Acid (Hexadecanoic Acid)</th>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>p-Aminoazobenzene</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>p-Aminobenzoic Acid (PABA)</th>
+
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>p-Aminophenol </th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Paraffins</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Paraldehyde</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Par-al-Ketone</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Parathion</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>p-Benzylphenol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>p-Chlorophenol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>p-Chlorotoluene</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>p-Cymene</th>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>p-Dichlorobenzene</th>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Peanut Oil </th>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Pelargonic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Penicillin</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Pentachloroethane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Pentachlorophenol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Pentaerythritol </th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Pentaerythritol Tetranitrate (PETN)</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Pentafluoroethane (FC 125)</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Peracetic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Perchloric Acid</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Perchloroethylene</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Petrolatum </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Petroleum &lt; 121 C/250 F </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Petroleum &gt; 121 C/250 F </th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Petroleum, Crude</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Phenethyl Alcohol </th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phenetole</th>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Phenol </th>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Phenolsulfonic Acid</th>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phenyl Acetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phenyl Ethyl Ether</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Phenylacetamide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phenylbenzene</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Phenylhydrazine</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phenylmercuric Acetate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phorone</th>
+<td>4</td>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Phosgene</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phosphine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phosphoric Acid (20%)</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Phosphoric Acid (80%)</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Phosphoric Etchants</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phosphorous Oxychloride</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phosphorous Tribromide</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phosphorous Trichloride</th>
+<td>1</td>
+<td>1</td>
+
+<td>4</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Phosphorus, Molten</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phthalic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Phthalic Anhydride</th>
+<td>4</td>
+<td>2</td>
+<td>3 </td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Pickling Solution</th>
+<td>2</td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Picric Acid</th>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Pine Oil </th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Pine Tar</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Pinene</th>
+<td>1</td>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Piperazine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Piperidine</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Piranha </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Plating Solution, Chrome</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Plating Solution, Others</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>p-Nitroaniline</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>p-Nitrobenzoic Acid</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>p-Nitrophenol </th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>p-Nitrotoluene</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Polyethylene Glycol </th>
+<td>3 </td>
+<td>1</td>
+<td>2</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Polyglycerol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Polyvinyl Acetate Emulsion</th>
+<td>3 </td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Acetate</th>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Potassium Bicarbonate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Bifluoride</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Bisulfate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Bisulfite</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Bitartrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Bromide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Potassium Carbonate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Chlorate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Chloride</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Potassium Chromate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Citrate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Copper Cyanide</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Potassium Cyanate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Cyanide</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Potassium Dichromate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Potassium Ferricyanide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Fluoride</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Glucocyanate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Hydroxide</th>
+<td>4</td>
+<td>1</td>
+
+<td>2</td>
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Potassium Iodide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium lodate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Nitrate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Potassium Nitrite</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Oxalate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Perchlorate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Permanganate</th>
+<td>3 </td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Peroxide</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Persulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Phosphate, Dibasic </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Pyrosulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Potassium Silicate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Sodium Tartrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Stannate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Stearate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Sulfate</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Potassium Sulfide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Sulfite</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Potassium Tartrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Potassium Thiocyanate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium Thiosultate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Potassium, Molten</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>p-Phenylenediamine</th>
+<td>4</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>PRESTONE Antifreeze</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>PRL-High Temp, Hydraulic Oil </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Producer Gas</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Propane</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Propionaldehyde</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Propyl Alcohol </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Propylene</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Propylene Chlorohydrin</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Propylene Dichloride</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Propylene Glycol </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Propylene Glycol Methyl Ether Acetate (PGMEA)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Propylene Imine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Propylene Oxide</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>PRS-3000</th>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>p-tert-Butylcatechol </th>
+
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>p-tert-Butylphenol </th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>p-Toluidine</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>p-Tolylaldehyde</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>PYDRAUL 115E </th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+
+<td>3 </td>
+</tr>
+
+<tr>
+<th>PYDRAUL 230C,312C &amp; 540C </th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>PYRANOL TRANSFORMER OIL </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Pyridine</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Pyrogallol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>PYROGARD 42,43,53 &amp; 55 </th>
+
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>PYROGARD C&amp;D (Water &amp; Petroleum)</th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Pyroligneous Acid</th>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>PYROLUBE </th>
+<td>1</td>
+<td>2</td>
+
+<td>4</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Pyrosulfuryl Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Pyrrole</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Pyruvic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Quinine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Quinizarin</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Quinoline</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Quinone</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Radiation</th>
+<td>4</td>
+<td>1</td>
+
+<td>3 </td>
+<td>2</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Raffinate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Rapeseed Oil </th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>RED LINE 100 OIL </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Resorcinol </th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Rhodium </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Riboflavin</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Ricinoleic Acid</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>RJ-1 (MIL-F-25558)</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>RJ-4 (MIL-F-82522)</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Rosin</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>RP-1 (MIL-R-25576)</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Saccharin Solution</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sal Ammoniac </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Salicylic Acid</th>
+
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Salt Water</th>
+<td>2</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>SANTOSAFE 300</th>
+<td>1</td>
+<td>3 </td>
+
+<td>4</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sebacic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>sec-Butyl Alcohol (SBA)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Selenic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Selenous Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sewage</th>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>SHELL TELLUS 27 (Petro Base)</th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>SHELL UMF (5% Aromatic)</th>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Shellac </th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Silane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Silicate Esters</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Silicon Tetrachloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Silicon Tetrafluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Silicone Oils</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Silver Bromide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Silver Chloride</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Silver Cyanide</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Silver Nitrate</th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Silver Oxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Silver Sulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>SINCLAIR OPALINE CX-EP LUBE </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>SKYDROL 500</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>SKYDROL 7000</th>
+
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Soap Solutions</th>
+<td>2</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>SOCONY PD959B VACUUM </th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Soda Ash </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Abietate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Acetate</th>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Sodium Aluminate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Antimonate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Arsenate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Arsenite</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Benzoate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Bicarbonate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Bifluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Bisulfate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Sodium Bisulfite</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Bitartrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Borate</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Bromate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Bromide</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Chlorate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Chloride</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Chlorite</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Sodium Chloroacetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Chromate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Citrate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Cyanate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Cyanide</th>
+<td>2</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Diacetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Dichromate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Ethylate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Sodium Ferricyanide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Ferrocyanide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Fluoride</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Fluorosilicate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Glutamate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Hydride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Hydrosulfide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Hydroxide</th>
+<td>3 </td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>Sodium Hypochlorite</th>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Sodium Hypophosphite</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Iodide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Lactate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Metaphosphate</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Metasilicate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Methylate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Nitrate</th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Sodium Oleate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Orthosilicate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Oxalate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Perborate</th>
+<td>1</td>
+
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Percarbonate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Perchlorate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Peroxide</th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Persulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Sodium Phenate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Phosphate, Dibasic </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Plumbite</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Pyrophosphate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Salicylate</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Salts</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Sesquisilicate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Silicate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Sodium Stannate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Stearate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Sulfate Decahydrate</th>
+
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Sulfate, Anhydrous</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Sulfide</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Sulfite</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Tartrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Tetrasulfide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Sodium Thiocyanate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Thiosulfate</th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sodium Trichloroacetate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium Tripolyphosphate</th>
+<td>2</td>
+
+<td>1</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sodium, Molten</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>SOLVASOL 1, 2 &amp; 3</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sorbitol </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sour Crude Oil </th>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+
+<td>4</td>
+</tr>
+
+<tr>
+<th>Sour Natural Gas</th>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Soybean Oil </th>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>SR6 FUEL </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Standard Clean 1 (SC - 1)</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Standard Clean 2 (SC - 2)</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Stannic Chloride</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Stannous Bromide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Stannous Chloride</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Stannous Fluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Stannous Sulfate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>STAUFFER 7700</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Steam &lt; 149 C/300 F </th>
+
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Steam &gt; 149 C/300 F </th>
+
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Stearic Acid</th>
+<td>2</td>
+
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Stoddard Solvent (ASTM D-484-52)</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Strontium Acetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Strontium Carbonate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Strontium Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Strontium Hydroxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Strontium Nitrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Styrene, Monomer</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Succinaldehyde</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Succinic Acid</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sucrose Solution</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sulfamic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sulfanilic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Sulfite Liquors</th>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Sulfolane</th>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sulfur Chloride</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sulfur Dioxide</th>
+<td>3 </td>
+
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Sulfur Hexafluoride</th>
+<td>3 </td>
+<td>1</td>
+
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Sulfur Tetrafluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Sulfur Trioxide, Dry </th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Sulfur, Molten</th>
+<td>1</td>
+<td>3 </td>
+<td>4</td>
+<td>3 </td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Sulfuric Acid (20% Oleum)</th>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Sulfuric Acid (96%)</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Sulfurous Acid</th>
+
+<td>3 </td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>SUNOCO SAE 10</th>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>SUPERSHELL Gasoline</th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>SWANFINCH EP Lubricant </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>sym-Diphenylethane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Tallow </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Tannic Acid</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Tar</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Tartaric Acid</th>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>TEOS (Tetraethylorthosilicate)</th>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Terephthalic Acid</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Terpineol </th>
+<td>1</td>
+<td>3 </td>
+<td>2</td>
+
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Terpinyl Acetate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>tert-Amyl Methyl Ether (TAME)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>tert-Butyl Alcohol </th>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>tert-Butyl Mercaptan</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Tetrabromomethane</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Tetrabutyl Titanate</th>
+<td>1</td>
+
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Tetrachloroethane</th>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>*</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Tetrachloroethylene</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Tetraethyl Lead</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>*</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Tetrafluoroethane (FC 134a)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Tetrafluoromethane (FC 14)</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Tetrahydrofuran (THF)</th>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>TETRALIN (Tetrahydronaphthalene)</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Tetramethyl ammonium hydroxide (TMAH) (25%)</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>TEXACO 3450 GEAR OIL </th>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>TEXACO UNI-TEMP GREASE </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>TEXAMATIC 3525 Fluid</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>THERMINOL 55 </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Thioglycolic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>THIOKOL TP-90B </th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>THIOKOL TP-95 </th>
+
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>*</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Thionyl Chloride</th>
+<td>2</td>
+
+<td>3 </td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Thiophene</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Thiophosphoryl Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Thiourea </th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Thorium Nitrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Tidewater Oil, BEEDOL </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Titanic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Titanium Dioxide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Titanium Sulfate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Titanium Tetrachloride</th>
+<td>1</td>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>TMA (Trimethylamine)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>TMAH (Tetramethyl Ammonium Hydroxide)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>TMAl (Trimethylaluminum)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>TMB (Trimethyl Borate)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>TMCTS (Tetramethylcyclotetrasiloxane)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>TMP (Trimethyl Phosphite)</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>TMPO (Trimethyl Phosphate)</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Toluene</th>
+<td>1</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Toluene Diisocyanate (TDI)</th>
+<td>3 </td>
+<td>2</td>
+<td>4</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Toluenesulfonyl p-Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Toluquinone</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Transformer Oil </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Transmission Fluid Type A </th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Triacetin</th>
+
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>*</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Triallyl Phosphate</th>
+<td>1</td>
+
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Tributoxyethyl Phosphate</th>
+<td>1</td>
+<td>1</td>
+
+<td>4</td>
+<td>*</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Tributyl Citrate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Tributyl Mercaptan</th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Tributyl Phosphate</th>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Tributylamine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Trichloroacetic Acid (TCA)</th>
+<td>3 </td>
+<td>2</td>
+<td>2</td>
+<td>*</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Trichloroacetyl Chloride</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Trichloroethylene (TCE)</th>
+<td>1</td>
+
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Trichlorofluoromethane (FC 11)</th>
+<td>2</td>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Trichlorophenylsilane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Trichlorosilane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Trichlorotrifluoroethane (FC 113)</th>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Tricresyl Phosphate</th>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Triethanolamine (TEA)</th>
+<td>4</td>
+<td>2</td>
+<td>3 </td>
+<td>*</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Triethyl Borate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Triethyl Phosphate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Triethylaluminum </th>
+<td>3 </td>
+<td>3 </td>
+
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Triethylamine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Triethylborane</th>
+<td>1</td>
+<td>3 </td>
+<td>4</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Triethylene Glycol (TEG)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Triethylenetetramine (TETA)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Trifluoroacetic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Trifluoroethane (FC 143a)</th>
+
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Trimethyl Borate (TMB)</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Trimethyl Phosphate (TMPO)</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Trimethyl Phosphite (TMP)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Trimethylaluminum (TMAl)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Trimethylamine (TMA)</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Trimethylolpropane</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Trinitrotoluene (TNT)</th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>*</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Trioctyl Phosphate</th>
+
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>3 </td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Tritium </th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Tung Oil (China Wood Oil)</th>
+<td>1</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Tungsten Hexafluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Tungstic Acid</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Turbine Oil No.15 (MIL L-7808A)</th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Turpentine</th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>UCON HYDROLUBE J-4 </th>
+<td>3 </td>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+</tr>
+
+<tr>
+<th>UCON OIL LB-385, 400X </th>
+<td>3 </td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>UDMH (Unsymmetrical Dimethyl Hydrazine)</th>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>UNIVIS 40 Hydraulic Fluid</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>UNIVOLT NO.35 (Mineral Oil)</th>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>UPDI (Ultra Pure Deionized Water)</th>
+<td>1</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Uranium Hexafluoride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Urea </th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Uric Acid</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Valeric Acid</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Vanadium Pentoxide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Varnish </th>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>2</td>
+</tr>
+
+<tr>
+<th>Vegetable Oils</th>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>VERSILUBE F44,F50 &amp; F55 </th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Vinegar</th>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>3 </td>
+<td>3 </td>
+</tr>
+
+<tr>
+<th>Vinyl Acetate</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Vinyl Alcohol (Ethanol)</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Vinyl Chloride (VC)</th>
+<td>1</td>
+
+<td>4</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Vinyl Fluoride</th>
+<td>2</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Vinylidene Chloride</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Vinylpyridine</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>VV-H-910</th>
+<td>1</td>
+<td>1</td>
+<td>3 </td>
+<td>2</td>
+<td>2</td>
+
+</tr>
+
+<tr>
+<th>WAGNER 21B Brake Fluid</th>
+<td>4</td>
+<td>1</td>
+<td>3 </td>
+<td>3 </td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Water</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>WEMCO C </th>
+
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Whiskey &amp; Wines</th>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>White Pine Oil </th>
+<td>1</td>
+
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Wolmar Salts</th>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Xenon</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Xylene</th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+
+<td>1</td>
+</tr>
+
+<tr>
+<th>Xylidine</th>
+<td>4</td>
+<td>4</td>
+<td>3 </td>
+<td>4</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Xylol </th>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Zeolites</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>*</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Zinc Acetate</th>
+
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Zinc Ammonium Chloride</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zinc Chloride</th>
+<td>1</td>
+<td>1</td>
+
+<td>2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Zinc Chromate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zinc Cyanide</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zinc Diethyldithiocarbamate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+</tr>
+
+<tr>
+<th>Zinc Fluorosilicate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zinc Hydrosulfite</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zinc Naphthenate</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zinc Nitrate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zinc Oxide</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zinc Phenolsulfonate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zinc Phosphate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zinc Salts</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+
+</tr>
+
+<tr>
+<th>Zinc Stearate</th>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zinc Sulfate</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<th>Zinc Sulfide</th>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+<tr>
+<th>Zirconium Nitrate</th>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+</tr>
+
+	
 <tr>
 <th>Abietic Acid</th>
 <td>*</td>
