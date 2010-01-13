@@ -12,23 +12,23 @@ A [jQuery][jquery_site] based plug-in for filtering large data sets with user in
 
 ### Example Usage
 
-Basic example on table rows
+#### Basic example on table rows
 
 	$('input#id_search').quicksearch('table tbody tr');
 
-Example on the <th> elements on a table row
+#### Example on the \<th\> elements on a table row
 
 	$('input#id_search').quicksearch('table tbody tr', {
 		selector: 'th'
 	});
 
-Example of how to use with JS
+#### Example of how to use with JS
 
 	var qs = $('input#id_search_list').quicksearch('ul#list_example li');
 	$('ul#list_example').append('<li>Loaded with Ajax</li>');
 	qs.cache();
 
-Example of how to use with Ajax
+#### Example of how to use with Ajax
 
 	var qs = $('input#id_search_list').quicksearch('ul#list_example li');
 	$.ajax({
@@ -40,6 +40,8 @@ Example of how to use with Ajax
 		}
 	});
 
+## License
 
+Under the same licenses as the jQuery library itself: http://docs.jquery.com/License
 
 [jquery_site]: http://www.jquery.com
