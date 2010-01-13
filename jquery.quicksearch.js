@@ -13,9 +13,6 @@ jQuery(function ($) {
 			},
 			onAfter: function () { 
 				return;
-			},
-			filter: function (i) { 
-				return i;
 			}
 		}, opt);
 		

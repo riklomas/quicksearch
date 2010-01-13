@@ -57,6 +57,25 @@ A [jQuery][jquery_site] based plug-in for filtering large data sets with user in
 		}
 	});
 
+## Options
+
+* 	#### delay
+	Delay of trigger in milliseconds
+*	#### selector
+	A query selector on sibling elements to test
+*	#### stripeRows
+	An array of class names to go on each row
+*	#### loader
+	A query selector to find a loading element
+*	#### noResults
+	A query selector to show if there's no results for the search
+*	#### bind
+	Event that the trigger is tied to
+*	#### onBefore
+	Function to call before trigger is called
+*	#### onAfter
+	Function to call after trigger is called
+
 ## License
 
 Under the same licenses as the jQuery library itself: <http://docs.jquery.com/License>
