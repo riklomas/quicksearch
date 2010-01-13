@@ -76,6 +76,24 @@ A [jQuery][jquery_site] based plug-in for filtering large data sets with user in
 *	#### onAfter
 	Function to call after trigger is called
 
+For example:
+
+	$('input#search').quicksearch('table tbody tr', {
+		'delay': 100,
+		'selector': 'th',
+		'stripeRows': ['odd', 'even'],
+		'loader': 'span.loading',
+		'noResults', 'tr#noresults',
+		'bind': 'keyup keydown',
+		'onBefore': function () {
+			console.log('on before');
+		},
+		'onAfter': function () {
+			console.log('on after');
+		}
+	});
+	
+
 ## License
 
 Under the same licenses as the jQuery library itself: <http://docs.jquery.com/License>
