@@ -10,15 +10,32 @@ A [jQuery][jquery_site] based plug-in for filtering large data sets with user in
 
 	$(input_select).quicksearch(elements_to_search, options);
 
-### Example Usage
+#### Example on table rows
 
-#### Basic example on table rows
+	/* Example form */
+	<form>
+		<input type="text" id="search">
+	</form>
+	
+	/* Example table */
+	<table>
+		<tbody>
+			<tr>
+				<td>Test cell</td>
+				<td>Another test cell</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.quicksearch.js"></script>
+	<script type="text/javascript">
+		$('input#search').quicksearch('table tbody tr');
+	</script>
 
-	$('input#id_search').quicksearch('table tbody tr');
+#### Example on the `<th>` elements on a table row
 
-#### Example on the \<th\> elements on a table row
-
-	$('input#id_search').quicksearch('table tbody tr', {
+	$('input#search').quicksearch('table tbody tr', {
 		selector: 'th'
 	});
 
@@ -30,18 +47,18 @@ A [jQuery][jquery_site] based plug-in for filtering large data sets with user in
 
 #### Example of how to use with Ajax
 
-	var qs = $('input#id_search_list').quicksearch('ul#list_example li');
+	var qs = $('input#search').quicksearch('table tbody tr');
 	$.ajax({
 		'type': 'GET',
 		'url': 'index.html',
 		'success': function (data) {
-			$('ul#list_example').append(data);
+			$('table tbody tr').append(data);
 			qs.cache();
 		}
 	});
 
 ## License
 
-Under the same licenses as the jQuery library itself: http://docs.jquery.com/License
+Under the same licenses as the jQuery library itself: <http://docs.jquery.com/License>
 
 [jquery_site]: http://www.jquery.com
