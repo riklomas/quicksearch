@@ -11,7 +11,7 @@ tbody th { text-align: left; }
 table th, table td { border: 1px solid #ddd; padding: 2px 5px; font-size: 100%; }
 pre { font-size: 130%; background: #f7f7f7; padding: 10px 10px; font-weight: bold; }
 .odd, .r1 { background: #fff; }
-.even, .r2 { background: #f7f7f7; }
+.even, .r2 { background: #eee; }
 .r3 { background: #ebebeb; }
 .search { font-weight:  bold; }
 

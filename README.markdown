@@ -88,7 +88,7 @@ For example:
 		'selector': 'th',
 		'stripeRows': ['odd', 'even'],
 		'loader': 'span.loading',
-		'noResults', 'tr#noresults',
+		'noResults': 'tr#noresults',
 		'bind': 'keyup keydown',
 		'onBefore': function () {
 			console.log('on before');
@@ -103,7 +103,17 @@ For example:
 			$(this).removeClass('show');
 		}
 	});
-	
+
+## Help make quicksearch better!
+
+If you have a bug fix, the best way to do this would be to:
+
+* Fork the project by clicking "Fork this project" at the top of this page
+* Clone your version of quicksearch from your Github account to your computer
+* Fix and commit the bugs, then push your version to your Github account
+* Click "pull request" at the top of my Github page
+
+I can't promise to answer questions about quicksearch, but please do report bugs here: <http://github.com/riklomas/quicksearch/issues>
 
 ## License
 
@@ -111,7 +121,9 @@ Under the same licenses as the jQuery library itself: <http://docs.jquery.com/Li
 
 ## Credits
 
-jQuery quicksearch is made by [Rik Lomas][http://www.riklomas.co.uk] at [Lomalogue][http://www.lomalogue.com]
+jQuery quicksearch is made by [Rik Lomas][rik_site] at [Lomalogue][lomalogue_site]
 
 [jquery_site]: http://www.jquery.com
+[rik_site]: http://www.riklomas.co.uk
+[lomalogue_site]: http://www.lomalogue.com
 
