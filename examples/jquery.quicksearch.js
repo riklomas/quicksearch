@@ -13,6 +13,12 @@ jQuery(function ($) {
 			},
 			onAfter: function () { 
 				return;
+			},
+			show: function () {
+				this.style.display = "";
+			},
+			hide: function () {
+				this.style.display = "none";
 			}
 		}, opt);
 		
@@ -24,10 +30,10 @@ jQuery(function ($) {
 			for (var i = 0; i < rowcache_length; i++)
 			{
 				if (this.test(vals, cache[i]) || val == "") {
-					rowcache[i].style.display = "";
+					options.show.apply(rowcache[i]);
 					noresults = false;
 				} else {
-					rowcache[i].style.display = "none";
+					options.hide.apply(rowcache[i]);
 				}
 			}
 			

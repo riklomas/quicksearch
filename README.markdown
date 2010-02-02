@@ -75,6 +75,11 @@ A [jQuery][jquery_site] based plug-in for filtering large data sets with user in
 	Function to call before trigger is called
 *	#### onAfter
 	Function to call after trigger is called
+*	#### show
+	Function that will add styles to matched elements
+*	#### hide
+	Function that will add styles to unmatched elements
+
 
 For example:
 
@@ -90,6 +95,12 @@ For example:
 		},
 		'onAfter': function () {
 			console.log('on after');
+		},
+		'show': function () {
+			$(this).addClass('show');
+		},
+		'hide': function () {
+			$(this).removeClass('show');
 		}
 	});
 	
@@ -98,4 +109,9 @@ For example:
 
 Under the same licenses as the jQuery library itself: <http://docs.jquery.com/License>
 
+## Credits
+
+jQuery quicksearch is made by [Rik Lomas][http://www.riklomas.co.uk] at [Lomalogue][http://www.lomalogue.com]
+
 [jquery_site]: http://www.jquery.com
+
