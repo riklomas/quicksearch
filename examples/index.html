@@ -6,18 +6,23 @@
 		
 		<link rel="stylesheet" href="style.css" type="text/css" media="all" title="" />
 		
-		<script type="text/javascript" src="jquery.js" ></script>
-		<script type="text/javascript" src="../jquery.quicksearch.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="http://github.com/riklomas/quicksearch/raw/dev/jquery.quicksearch.js"></script>
 		<script type="text/javascript">
 			$(function () {
+				/*
+				Example 1
+				*/
 				$('input#id_search').quicksearch('table#table_example tbody tr');
 				
+				/*
+				Example 2 
+				*/
 				$('input#id_search2').quicksearch('table#table_example2 tbody tr', {
 					'delay': 300,
 					'selector': 'th',
 					'stripeRows': ['odd', 'even'],
 					'loader': 'span.loading',
-					'noResults': 'tr#noresults',
 					'bind': 'keyup click',
 					'show': function () {
 						this.style.color = '';
@@ -27,9 +32,22 @@
 					}
 				});
 				
+				/*
+				Example 3
+				*/
 				var qs = $('input#id_search_list').quicksearch('ul#list_example li');
-				$('ul#list_example').append('<li>Loaded with Ajax</li>');
-				qs.cache();
+				
+				$.ajax({
+					'url': 'example.json',
+					'type': 'GET',
+					'dataType': 'json',
+					'success': function (data) {
+						for (i in data['list_items']) {
+							$('ul#list_example').append('<li>' + data['list_items'][i] + '</li>');
+						}
+						qs.cache();
+					}
+				});
 				
 				$('input#add_to_list').click(function () {
 					$('ul#list_example').append('<li>Added on click</li>');
@@ -42,7 +60,7 @@
 	<body>
 		<h1>jQuery quickSearch</h1>
 		
-		<p><a href="http://github.com/riklomas/quicksearch">Download at Github</a></p>
+		<p class="github"><a href="http://github.com/riklomas/quicksearch">More information and download at Github</a></p>
 		
 		<h2 id="examples">Examples</h2>
 		<h3>Simple example</h3>
@@ -534,7 +552,6 @@ $('input#id_search2').quicksearch('table#table_example2 tbody tr', {
 	'selector': 'th',
 	'stripeRows': ['odd', 'even'],
 	'loader': 'span.loading',
-	'noResults': 'tr#noresults',
 	'bind': 'keyup click',
 	'show': function () {
 		this.style.color = '';
@@ -577,8 +594,18 @@ $('input#id_search2').quicksearch('table#table_example2 tbody tr', {
 		<p>Example uses following code:</p>
 <code><pre>
 var qs = $('input#id_search_list').quicksearch('ul#list_example li');
-$('ul#list_example').append('&lt;li&gt;Loaded with Ajax&lt;/li&gt;');
-qs.cache();
+
+$.ajax({
+	'url': 'example.json',
+	'type': 'GET',
+	'dataType': 'json',
+	'success': function (data) {
+		for (i in data['list_items']) {
+			$('ul#list_example').append('&lt;li>' + data['list_items'][i] + '&lt;/li>');
+		}
+		qs.cache();
+	}
+});
 
 $('input#add_to_list').click(function () {
 	$('ul#list_example').append('&lt;li&gt;Added on click&lt;/li&gt;');
@@ -586,7 +613,10 @@ $('input#add_to_list').click(function () {
 });
 </pre></code>
 
-<p><a href="http://github.com/riklomas/quicksearch">Download at Github</a></p>
+
+<p><a href="super_table.html">Super table example</a></p>
+
+<p class="github"><a href="http://github.com/riklomas/quicksearch">More information and download at Github</a></p>
 
 	    
 	</body>

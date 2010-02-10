@@ -4,7 +4,8 @@ A [jQuery][jquery_site] based plug-in for filtering large data sets with user in
 
 ## Examples
 
--- coming soon --
+* <http://www.lomalogue.com/jquery/quicksearch/>
+* <http://www.lomalogue.com/jquery/quicksearch/super_table.html>
 
 ## Usage
 
@@ -113,7 +114,7 @@ If you have a bug fix, the best way to do this would be to:
 * Fix and commit the bugs, then push your version to your Github account
 * Click "pull request" at the top of my Github page
 
-I can't promise to answer questions about quicksearch, but please do report bugs here: <http://github.com/riklomas/quicksearch/issues>
+I can't promise to answer every questions about quicksearch, but please do report bugs here: <http://github.com/riklomas/quicksearch/issues> or [send me a message on Github][mail_me]
 
 ## License
 
@@ -126,4 +127,5 @@ jQuery quicksearch is made by [Rik Lomas][rik_site] at [Lomalogue][lomalogue_sit
 [jquery_site]: http://www.jquery.com
 [rik_site]: http://www.riklomas.co.uk
 [lomalogue_site]: http://www.lomalogue.com
+[mail_me]: http://github.com/inbox/new/riklomas
 

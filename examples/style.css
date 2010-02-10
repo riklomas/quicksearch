@@ -3,6 +3,7 @@ h1 { font-size: 250%; color: #f34105; }
 h1 sup { font-size: 50%; }
 h2 { color: #f34105; font-size: 175%; }
 a { color: #005bd8; }
+a:hover { text-decoration: none; }
 .hr hr { display: none; }
 form { margin: 10px 0; }
 table { width: 100%; border-collapse: collapse; }
@@ -23,6 +24,13 @@ form.quicksearch { padding: 10px; background: #f7f7f7; }
 form.quicksearch input { margin-left: 5px; width: 300px; }
 form.quicksearch img { vertical-align: middle; margin-left: 5px; }
 
+fieldset { border: 1px solid #ccc;}
+form input { font-size: 16px;}
+
 #footer { background: #333; color: #fff; padding: 10px; margin-top: 20px; }
 #footer a { color: #fff; }
 #footer span { margin: 0 2px; color: #666; }
+
+.github { font-size: 150%; font-weight: bold; }
+.github a { background: #fff172; padding: 3px 10px;}
+
