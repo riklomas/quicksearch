@@ -136,7 +136,7 @@ jQuery(function ($) {
 		this.loader(false);
 		
 		return this.each(function () {
-			$(this).bind('keyup', function () {
+			$(this).bind(options.bind, function () {
 				val = $(this).val();
 				e.trigger();
 			});
