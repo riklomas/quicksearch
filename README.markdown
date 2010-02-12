@@ -107,14 +107,16 @@ For example:
 
 ## Help make quicksearch better!
 
-If you have a bug fix, the best way to do this would be to:
+If you have a bug fix, the best way to help would be to:
 
 * Fork the project by clicking "Fork this project" at the top of this page
 * Clone your version of quicksearch from your Github account to your computer
 * Fix and commit the bugs, then push your version to your Github account
 * Click "pull request" at the top of my Github page
 
-I can't promise to answer every questions about quicksearch, but please do report bugs here: <http://github.com/riklomas/quicksearch/issues> or [send me a message on Github][mail_me]
+I can't promise to answer every question about quicksearch, 
+but please do [report bugs here][issues] or [send me a message on Github][mail_me]. 
+You can [follow me on Github][github_follow] and [on Twitter][twitter_follow].
 
 ## License
 
@@ -127,5 +129,7 @@ jQuery quicksearch is made by [Rik Lomas][rik_site] at [Lomalogue][lomalogue_sit
 [jquery_site]: http://www.jquery.com
 [rik_site]: http://www.riklomas.co.uk
 [lomalogue_site]: http://www.lomalogue.com
+[issues]: http://github.com/riklomas/quicksearch/issues
 [mail_me]: http://github.com/inbox/new/riklomas
-
+[github_follow]: http://github.com/users/follow?target=riklomas
+[twitter_follow]: http://twitter.com/riklomas
