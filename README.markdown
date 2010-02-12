@@ -9,6 +9,8 @@ A [jQuery][jquery_site] based plug-in for filtering large data sets with user in
 
 ## Usage
 
+Note that the usage has changed in the latest version of quicksearch, the code is *not* backwards compatible
+
 	$(input_selector).quicksearch(elements_to_search, options);
 
 #### Example on table rows
