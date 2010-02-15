@@ -24,7 +24,7 @@ jQuery(function ($) {
 		
 		this.go = function () {
 			
-			var i = 0, noresults = true, vals = val.split(' ');
+			var i = 0, noresults = true, vals = val.toLowerCase().split(' ');
 			
 			var rowcache_length = rowcache.length;
 			for (var i = 0; i < rowcache_length; i++)
