@@ -9,7 +9,8 @@ A [jQuery][jquery_site] based plug-in for filtering large data sets with user in
 
 ## Usage
 
-Note that the usage has changed in the latest version of quicksearch, the code is *not* backwards compatible
+Note that the usage has changed in the latest version of quicksearch, the code is *not* backwards compatible,
+the form and input are not build by the script any more.
 
 	$(input_selector).quicksearch(elements_to_search, options);
 
