@@ -120,7 +120,8 @@ If you have a bug fix, the best way to help would be to:
 I can't promise to answer every question about quicksearch, 
 but please do [report bugs here][issues] or [send me a message on Github][mail_me]. 
 
-You can [follow me on Github][github_follow] and [on Twitter][twitter_follow] for updates.
+You can [watch quicksearch][github_watch] for updates or [follow me on Github][github_follow] 
+and [on Twitter][twitter_follow].
 
 ## License
 
