@@ -136,5 +136,6 @@ jQuery quicksearch is made by [Rik Lomas][rik_site] at [Lomalogue][lomalogue_sit
 [lomalogue_site]: http://www.lomalogue.com
 [issues]: http://github.com/riklomas/quicksearch/issues
 [mail_me]: http://github.com/inbox/new/riklomas
+[github_watch]: http://github.com/riklomas/quicksearch/toggle_watch
 [github_follow]: http://github.com/users/follow?target=riklomas
 [twitter_follow]: http://twitter.com/riklomas
