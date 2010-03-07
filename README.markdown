@@ -131,7 +131,7 @@ Under the same licenses as the jQuery library itself: <http://docs.jquery.com/Li
 
 jQuery quicksearch is made by [Rik Lomas][rik_site] at [Lomalogue][lomalogue_site]
 
-Thanks to [thelizardreborn][http://github.com/thelizardreborn] for fixes
+Thanks to [thelizardreborn][thelizardreborn] for fixes
 
 [jquery_site]: http://www.jquery.com
 [rik_site]: http://www.riklomas.co.uk
@@ -141,3 +141,4 @@ Thanks to [thelizardreborn][http://github.com/thelizardreborn] for fixes
 [github_watch]: http://github.com/riklomas/quicksearch/toggle_watch
 [github_follow]: http://github.com/users/follow?target=riklomas
 [twitter_follow]: http://twitter.com/riklomas
+[thelizardreborn]: http://github.com/thelizardreborn
