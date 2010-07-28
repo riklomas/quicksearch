@@ -29,6 +29,12 @@
 					},
 					'hide': function () {
 						this.style.color = '#ccc';
+					},
+					'prepareQuery': function (val) {
+						return new RegExp(val, "i");
+					},
+					'test': function (query, txt, _row) {
+						return query.test(txt);
 					}
 				});
 				
@@ -304,8 +310,7 @@
 $('input#id_search').quicksearch('table#table_example tbody tr');
 </pre></code>
 
-<h3>Example with options (only on &lt;th&gt;)</h3>
-
+<h3>Example with options &mdash; search with regexp, only on Email (which is selected by &lt;th&gt;)</h3>
 
 <form action="#">
 	<fieldset>
@@ -554,6 +559,12 @@ $('input#id_search2').quicksearch('table#table_example2 tbody tr', {
 	},
 	'hide': function () {
 		this.style.color = '#ccc';
+	},
+	'prepareQuery': function (val) {
+		return new RegExp(val, "i");
+	},
+	'test': function (query, txt, _row) {
+		return query.test(txt);
 	}
 });
 </pre></code>

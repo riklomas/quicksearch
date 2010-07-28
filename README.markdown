@@ -83,6 +83,14 @@ the form and input are not build by the script any more.
 	Function that will add styles to matched elements
 *	#### hide
 	Function that will add styles to unmatched elements
+*	#### prepareQuery
+	Function that transforms text from input_selector into query used by `test` function
+*	#### test
+	Function that tells if a given item should be hidden
+	It takes 3 arguments:
+	- query prepared by `prepareQuery`
+	- stripped text from `selector`
+	- element to be potentially hidden
 
 
 For example:
@@ -105,6 +113,12 @@ For example:
 		},
 		'hide': function () {
 			$(this).removeClass('show');
+		}
+		'prepareQuery': function (val) {
+			return new RegExp(val, "i");
+		},
+		'test': function (query, txt, _row) {
+			return query.test(txt);
 		}
 	});
 

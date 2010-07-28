@@ -19,17 +19,28 @@ jQuery(function ($) {
 			},
 			hide: function () {
 				this.style.display = "none";
+			},
+			prepareQuery: function (val) {
+			    return val.toLowerCase().split(' ');
+			},
+			test: function (query, txt, _row) {
+			    for (var i = 0; i < query.length; i += 1) {
+			        if (txt.indexOf(query[i]) === -1) {
+			            return false;
+			        }
+			    }
+			    return true;
 			}
 		}, opt);
 		
 		this.go = function () {
 			
-			var i = 0, noresults = true, vals = val.toLowerCase().split(' ');
+			var i = 0, noresults = true, query = options.prepareQuery(val);
 			
 			var rowcache_length = rowcache.length;
 			for (var i = 0; i < rowcache_length; i++)
 			{
-				if (this.test(vals, cache[i]) || val == "") {
+				if (options.test(query, cache[i], rowcache[i])) {
 					options.show.apply(rowcache[i]);
 					noresults = false;
 				} else {
@@ -87,15 +98,6 @@ jQuery(function ($) {
 				 (bool) ? $(options.loader).show() : $(options.loader).hide();
 			}
 			return this;
-		};
-		
-		this.test = function (vals, t) {
-			for (var i = 0; i < vals.length; i += 1) {
-				if (t.indexOf(vals[i]) === -1) {
-					return false;
-				}
-			}
-			return true;
 		};
 		
 		this.cache = function () {
