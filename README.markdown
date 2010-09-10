@@ -84,12 +84,12 @@ the form and input are not build by the script any more.
 *	#### hide
 	Function that will add styles to unmatched elements
 *	#### prepareQuery
-	Function that transforms text from input_selector into query used by `test` function
-*	#### test
+	Function that transforms text from input_selector into query used by 'test' function
+*	#### testQuery
 	Function that tells if a given item should be hidden
 	It takes 3 arguments:
-	- query prepared by `prepareQuery`
-	- stripped text from `selector`
+	- query prepared by 'prepareQuery'
+	- stripped text from 'selector'
 	- element to be potentially hidden
 
 
@@ -117,7 +117,7 @@ For example:
 		'prepareQuery': function (val) {
 			return new RegExp(val, "i");
 		},
-		'test': function (query, txt, _row) {
+		'testQuery': function (query, txt, _row) {
 			return query.test(txt);
 		}
 	});
@@ -145,7 +145,7 @@ Under the same licenses as the jQuery library itself: <http://docs.jquery.com/Li
 
 jQuery quicksearch is made by [Rik Lomas][rik_site] at [Lomalogue][lomalogue_site]
 
-Thanks to [Seth F.][thelizardreborn] for fixes
+Thanks to [Seth F.][thelizardreborn] for fixes and [Krzysiek Goj][goj] for the  testQuery and prepareQuery option updates
 
 [jquery_site]: http://www.jquery.com
 [rik_site]: http://www.riklomas.co.uk
@@ -156,3 +156,4 @@ Thanks to [Seth F.][thelizardreborn] for fixes
 [github_follow]: http://github.com/users/follow?target=riklomas
 [twitter_follow]: http://twitter.com/riklomas
 [thelizardreborn]: http://github.com/thelizardreborn
+[goj]: http://github.com/goj

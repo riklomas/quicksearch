@@ -21,15 +21,15 @@ jQuery(function ($) {
 				this.style.display = "none";
 			},
 			prepareQuery: function (val) {
-			    return val.toLowerCase().split(' ');
+				return val.toLowerCase().split(' ');
 			},
-			test: function (query, txt, _row) {
-			    for (var i = 0; i < query.length; i += 1) {
-			        if (txt.indexOf(query[i]) === -1) {
-			            return false;
-			        }
-			    }
-			    return true;
+			testQuery: function (query, txt, _row) {
+				for (var i = 0; i < query.length; i += 1) {
+					if (txt.indexOf(query[i]) === -1) {
+						return false;
+					}
+				}
+				return true;
 			}
 		}, opt);
 		
@@ -40,7 +40,7 @@ jQuery(function ($) {
 			var rowcache_length = rowcache.length;
 			for (var i = 0; i < rowcache_length; i++)
 			{
-				if (options.test(query, cache[i], rowcache[i])) {
+				if (options.testQuery(query, cache[i], rowcache[i])) {
 					options.show.apply(rowcache[i]);
 					noresults = false;
 				} else {

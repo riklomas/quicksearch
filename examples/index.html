@@ -13,7 +13,7 @@
 				/*
 				Example 1
 				*/
-				$('input#id_search').quicksearch('table#table_example tbody tr');
+				$('input#id_search').quicksearch('table tbody tr');
 				
 				/*
 				Example 2 
@@ -33,7 +33,7 @@
 					'prepareQuery': function (val) {
 						return new RegExp(val, "i");
 					},
-					'test': function (query, txt, _row) {
+					'testQuery': function (query, txt, _row) {
 						return query.test(txt);
 					}
 				});
@@ -73,10 +73,10 @@
 		
 		<form action="#">
 			<fieldset>
-				<input type="text" name="search" value="" id="id_search" />
+				<input type="text" name="search" value="" id="id_search" placeholder="Search" autofocus />
 			</fieldset>
 		</form>
-		
+			
 		<table id="table_example">
 			<thead>
 				<tr>
@@ -310,7 +310,7 @@
 $('input#id_search').quicksearch('table#table_example tbody tr');
 </pre></code>
 
-<h3>Example with options &mdash; search with regexp, only on Email (which is selected by &lt;th&gt;)</h3>
+<h3>Example with options &mdash; search with email regexp on &lt;th&gt; only</h3>
 
 <form action="#">
 	<fieldset>
@@ -563,7 +563,7 @@ $('input#id_search2').quicksearch('table#table_example2 tbody tr', {
 	'prepareQuery': function (val) {
 		return new RegExp(val, "i");
 	},
-	'test': function (query, txt, _row) {
+	'testQuery': function (query, txt, _row) {
 		return query.test(txt);
 	}
 });

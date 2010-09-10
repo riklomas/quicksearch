@@ -6,7 +6,7 @@ a { color: #005bd8; }
 a:hover { text-decoration: none; }
 .hr hr { display: none; }
 form { margin: 10px 0; }
-table { width: 100%; border-collapse: collapse; }
+table { width: 100%; border-collapse: collapse; margin: 1em 0; }
 thead th { background: #f34105; color: #fff; }
 tbody th { text-align: left; }
 table th, table td { border: 1px solid #ddd; padding: 2px 5px; font-size: 100%; }
