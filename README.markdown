@@ -84,7 +84,7 @@ the form and input are not build by the script any more.
 *	#### hide
 	Function that will add styles to unmatched elements
 *	#### prepareQuery
-	Function that transforms text from input_selector into query used by 'test' function
+	Function that transforms text from input_selector into query used by 'testQuery' function
 *	#### testQuery
 	Function that tells if a given item should be hidden
 	It takes 3 arguments:
