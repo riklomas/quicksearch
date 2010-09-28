@@ -35,12 +35,13 @@
 		
 		this.go = function () {
 			
-			var i = 0, noresults = true, query = options.prepareQuery(val);
+			var i = 0, 
+			noresults = true, 
+			query = options.prepareQuery(val),
+			val_empty = (val.replace(' ', '').length === 0);
 			
-			var rowcache_length = rowcache.length;
-			for (var i = 0; i < rowcache_length; i++)
-			{
-				if (options.testQuery(query, cache[i], rowcache[i])) {
+			for (var i = 0, len = rowcache.length; i < len; i++) {
+				if (val_empty || options.testQuery(query, cache[i], rowcache[i])) {
 					options.show.apply(rowcache[i]);
 					noresults = false;
 				} else {
