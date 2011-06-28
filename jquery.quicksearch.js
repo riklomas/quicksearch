@@ -7,6 +7,7 @@
 			stripeRows: null,
 			loader: null,
 			noResults: '',
+			totalResults: '',
 			bind: 'keyup',
 			onBefore: function () { 
 				return;
@@ -35,7 +36,8 @@
 		
 		this.go = function () {
 			
-			var i = 0, 
+			var i = 0,
+			numMatchedRows = 0,
 			noresults = true, 
 			query = options.prepareQuery(val),
 			val_empty = (val.replace(' ', '').length === 0);
@@ -44,15 +46,16 @@
 				if (val_empty || options.testQuery(query, cache[i], rowcache[i])) {
 					options.show.apply(rowcache[i]);
 					noresults = false;
+					numMatchedRows++;
 				} else {
 					options.hide.apply(rowcache[i]);
 				}
 			}
 			
 			if (noresults) {
-				this.results(false);
+				this.results(false, numMatchedRows);
 			} else {
-				this.results(true);
+				this.results(true, numMatchedRows);
 				this.stripe();
 			}
 			
@@ -83,13 +86,17 @@
 			return output;
 		};
 		
-		this.results = function (bool) {
+		this.results = function (bool, numMatchedRows) {
 			if (typeof options.noResults === "string" && options.noResults !== "") {
 				if (bool) {
 					$(options.noResults).hide();
 				} else {
 					$(options.noResults).show();
 				}
+			}
+
+			if (typeof options.totalResults === "string" && options.totalResults !== "") {
+				$(options.totalResults).html(numMatchedRows);
 			}
 			return this;
 		};
