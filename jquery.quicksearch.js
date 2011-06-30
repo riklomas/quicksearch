@@ -7,7 +7,7 @@
 			stripeRows: null,
 			loader: null,
 			noResults: '',
-			bind: 'keyup',
+			bind: ['keyup','input','mouseup','change'],
 			onBefore: function () { 
 				return;
 			},
@@ -109,13 +109,12 @@
 				jq_results = jq_results.not(options.noResults);
 			}
 			
-			var t = (typeof options.selector === "string") ? jq_results.find(options.selector) : $(target).not(options.noResults);
-			cache = t.map(function () {
-				return e.strip_html(this.innerHTML);
-			});
+			cache = [];
+			rowcache = [];
 			
-			rowcache = jq_results.map(function () {
-				return this;
+			jq_results.each(function () {
+				rowcache.push(this);
+				cache.push($(this).find(options.selector).text());
 			});
 			
 			return this.go();
@@ -139,10 +138,23 @@
 		this.loader(false);
 		
 		return this.each(function () {
-			$(this).bind(options.bind, function () {
+			var self = $(this);
+			var handler = function (event) {
+				var oldVal = val;
 				val = $(this).val();
-				e.trigger();
-			});
+				if ( oldVal != val ) {
+					e.trigger();
+				}
+			};
+			
+			if ( typeof(options.bind) == "string" ) {
+				self.bind(options.bind, handler);
+			}
+			else {
+				options.bind.each(function(eventName){
+					self.bind(eventName, handler);
+				});
+			}
 		});
 		
 	};
