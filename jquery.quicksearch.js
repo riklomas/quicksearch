@@ -7,7 +7,7 @@
 			stripeRows: null,
 			loader: null,
 			noResults: '',
-			bind: ['keyup','input','mouseup','change'],
+			bind: 'keyup input mouseup change',
 			onBefore: function () { 
 				return;
 			},
@@ -147,14 +147,7 @@
 				}
 			};
 			
-			if ( typeof(options.bind) == "string" ) {
-				self.bind(options.bind, handler);
-			}
-			else {
-				options.bind.each(function(eventName){
-					self.bind(eventName, handler);
-				});
-			}
+			self.bind(options.bind, handler);
 		});
 		
 	};
