@@ -22,6 +22,7 @@
 					'delay': 300,
 					'selector': 'th',
 					'stripeRows': ['odd', 'even'],
+					'clearSearch': 'a.clearsearch',
 					'loader': 'span.loading',
 					'bind': 'keyup click',
 					'show': function () {
@@ -314,7 +315,7 @@ $('input#id_search').quicksearch('table#table_example tbody tr');
 
 <form action="#">
 	<fieldset>
-		<input type="text" name="search" value="" id="id_search2" /> <span class="loading">Loading...</span>
+		<input type="text" name="search" value="" id="id_search2" /> <a href="#" class="clearsearch">X</a> <span class="loading">Loading...</span>
 	</fieldset>
 </form>
 
@@ -552,6 +553,7 @@ $('input#id_search2').quicksearch('table#table_example2 tbody tr', {
 	'delay': 300,
 	'selector': 'th',
 	'stripeRows': ['odd', 'even'],
+	'clearSearch': 'a.clearsearch',
 	'loader': 'span.loading',
 	'bind': 'keyup click',
 	'show': function () {

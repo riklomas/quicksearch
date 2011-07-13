@@ -1,3 +1,4 @@
+//https://github.com/riklomas/quicksearch
 (function($, window, document, undefined) {
 	$.fn.quicksearch = function (target, opt) {
 		
@@ -7,6 +8,7 @@
 			stripeRows: null,
 			loader: null,
 			noResults: '',
+			clearSearch: '', 
 			bind: 'keyup',
 			onBefore: function () { 
 				return;
@@ -39,7 +41,15 @@
 			noresults = true, 
 			query = options.prepareQuery(val),
 			val_empty = (val.replace(' ', '').length === 0);
-			
+
+			if(options.clearSearch.length !== 0) {
+				if (val_empty) {
+					$(options.clearSearch).hide();
+				} else {
+					$(options.clearSearch).show();
+				}
+			}
+
 			for (var i = 0, len = rowcache.length; i < len; i++) {
 				if (val_empty || options.testQuery(query, cache[i], rowcache[i])) {
 					options.show.apply(rowcache[i]);
@@ -60,6 +70,16 @@
 			options.onAfter();
 			
 			return this;
+		};
+
+		this.clear_search = function() {
+			if(options.clearSearch.length !== 0) {
+				$(options.clearSearch).bind('click', function(el) {
+					el.preventDefault();
+					val = '';
+					e.val('').go();
+				});
+			}
 		};
 		
 		this.stripe = function () {
@@ -137,6 +157,7 @@
 		this.results(true);
 		this.stripe();
 		this.loader(false);
+		this.clear_search();
 		
 		return this.each(function () {
 			$(this).bind(options.bind, function () {

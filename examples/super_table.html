@@ -8,6 +8,7 @@
 			$(document).ready(function () {
 				$("#id_search").quicksearch("table tbody tr", {
 					noResults: '#noresults',
+					clearSearch: 'a.clearsearch',
 					stripeRows: ['odd', 'even'],
 					loader: 'span.loading'
 				});
@@ -20,7 +21,7 @@
 	
 		<form action="#">
 			<fieldset>
-				<input type="text" name="search" value="" id="id_search" /> <span class="loading">Loading...</span>
+				<input type="text" name="search" value="" id="id_search" /> <a href="#" class="clearsearch">X</a> <span class="loading">Loading...</span>
 			</fieldset>
 		</form>	
 		

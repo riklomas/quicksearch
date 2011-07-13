@@ -73,6 +73,8 @@ the form and input are not build by the script any more.
 	A query selector to find a loading element
 *	#### noResults
 	A query selector to show if there's no results for the search
+*	#### clearSearch
+	A query selector to use for clearing your search term.  Will only display with 1 or more search characters
 *	#### bind
 	Event that the trigger is tied to
 *	#### onBefore
@@ -101,6 +103,7 @@ For example:
 		'stripeRows': ['odd', 'even'],
 		'loader': 'span.loading',
 		'noResults': 'tr#noresults',
+		'clearSearch': 'a.clearsearch',
 		'bind': 'keyup keydown',
 		'onBefore': function () {
 			console.log('on before');
