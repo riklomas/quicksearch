@@ -117,6 +117,13 @@
 			rowcache = jq_results.map(function () {
 				return this;
 			});
+
+			if (!val) {
+				var temp = this.val();
+				if (temp) {
+					val = temp;
+				}
+			}
 			
 			return this.go();
 		};
