@@ -7,6 +7,7 @@
 			stripeRows: null,
 			loader: null,
 			noResults: '',
+                        excludeFilter: '',
 			bind: 'keyup',
 			onBefore: function () { 
 				return;
@@ -111,7 +112,14 @@
 			
 			var t = (typeof options.selector === "string") ? jq_results.find(options.selector) : $(target).not(options.noResults);
 			cache = t.map(function () {
-				return e.strip_html(this.innerHTML);
+				if (typeof options.excludeFilter === "string" && options.excludeFilter !== "") {
+                                        el = $(this).clone();
+                                        $(options.excludeFilter, el).remove();
+                                        innerhtml = el.html();
+                                }else{
+                                    innerhtml = this.innerHTML;
+                                }
+				return e.strip_html(innerhtml);
 			});
 			
 			rowcache = jq_results.map(function () {
