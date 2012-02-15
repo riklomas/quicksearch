@@ -25,15 +25,37 @@
 				return val.toLowerCase().split(' ');
 			},
 			testQuery: function (query, txt, _row) {
+				/*
+				Edit Description:
+				For my use case, I want to retain rows that contain at least one of multiple query words.  The as-is functionality only retains rows that contain all the query words.
+				
+				Increment x when a word doesn't appear in a row.
+				if x == number of terms in query (query.length) ,then there are no matches, return false, else, at least one of the terms matches, so return true to keep the row in the result set
+				*/
+				
+				//Edit Start: setup negative match counter
+				var x = 0
+				//end edit:
+				
 				for (var i = 0; i < query.length; i += 1) {
 					if (txt.indexOf(query[i]) === -1) {
-						return false;
+						//Edit Start:
+						//return false;
+						//if the query term doesn't match the txt, increment negative match counter
+						x++;
+						//end edit:
 					}
 				}
-				return true;
+				//Edit Start:
+				//if negative match counter equals the number of query terms, return false, else at least one term 
+				//matched, so return true
+				if(x == query.length){return false;}
+				else{return true;}
+				//return true;
+				//end edit:
 			}
 		}, opt);
-		
+
 		this.go = function () {
 			
 			var i = 0,
@@ -41,12 +63,14 @@
 				noresults = true, 
 				query = options.prepareQuery(val),
 				val_empty = (val.replace(' ', '').length === 0);
-			
+					
 			for (var i = 0, len = rowcache.length; i < len; i++) {
 				if (val_empty || options.testQuery(query, cache[i], rowcache[i])) {
+					
 					options.show.apply(rowcache[i]);
 					noresults = false;
 					numMatchedRows++;
+				
 				} else {
 					options.hide.apply(rowcache[i]);
 				}
@@ -130,6 +154,7 @@
 			}
 			
 			var t = (typeof options.selector === "string") ? jq_results.find(options.selector) : $(target).not(options.noResults);
+			
 			cache = t.map(function () {
 				return e.strip_html(this.innerHTML);
 			});
@@ -137,7 +162,7 @@
 			rowcache = jq_results.map(function () {
 				return this;
 			});
-
+			
 			/*
 			 * Modified fix for sync-ing "val". 
 			 * Original fix https://github.com/michaellwest/quicksearch/commit/4ace4008d079298a01f97f885ba8fa956a9703d1
@@ -173,6 +198,7 @@
 				
 				val = $(this).val();
 				e.trigger();
+				
 			});
 		});
 		
