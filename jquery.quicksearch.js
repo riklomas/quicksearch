@@ -9,6 +9,7 @@
 			noResults: '',
 			matchedResultsCount: 0,
 			bind: 'keyup',
+			splitResults: false,
 			onBefore: function () { 
 				return;
 			},
@@ -31,27 +32,37 @@
 				
 				Increment x when a word doesn't appear in a row.
 				if x == number of terms in query (query.length) ,then there are no matches, return false, else, at least one of the terms matches, so return true to keep the row in the result set
+				
+				options.splitResults set in options
 				*/
 				
 				//Edit Start: setup negative match counter
-				var x = 0
+				var negativeMatchCount = 0;
 				//end edit:
-				
 				for (var i = 0; i < query.length; i += 1) {
+					
 					if (txt.indexOf(query[i]) === -1) {
 						//Edit Start:
-						//return false;
 						//if the query term doesn't match the txt, increment negative match counter
-						x++;
+						if(options.splitResults){
+							negativeMatchCount++;
+						}else{
+							//original return if splitResults option not set
+							return false;
+						}
 						//end edit:
 					}
 				}
-				//Edit Start:
-				//if negative match counter equals the number of query terms, return false, else at least one term 
-				//matched, so return true
-				if(x == query.length){return false;}
-				else{return true;}
-				//return true;
+				/*
+				Edit Start:
+				if negative match counter equals the number of query terms, return false, 
+				else at least one term matched, so return true
+				*/
+				if(negativeMatchCount == query.length && options.splitResults){
+					return false;
+				}else{
+					return true;
+				}
 				//end edit:
 			}
 		}, opt);
