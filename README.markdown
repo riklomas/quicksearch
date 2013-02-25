@@ -43,7 +43,7 @@ $(input_selector).quicksearch(elements_to_search, options);
 $('input#search').quicksearch('table tbody tr', {
 	selector: 'th'
 });
-```js
+```
 #### Example of how to use with JS
 ```js
 var qs = $('input#id_search_list').quicksearch('ul#list_example li');
