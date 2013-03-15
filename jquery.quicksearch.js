@@ -160,9 +160,6 @@
 		};
 		
 		this.cache();
-		this.results(true);
-		this.stripe();
-		this.loader(false);
 		
 		return this.each(function () {
 			
