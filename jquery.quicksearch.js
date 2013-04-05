@@ -157,7 +157,6 @@
 			this.matchedResultsCount = numMatchedRows;
 			this.loader(false);
 			options.onAfter();
-			
 			return this;
 		};
 		
@@ -199,13 +198,22 @@
 		};
 		
 		this.results = function (bool) {
-			if (typeof options.noResults === "string" && options.noResults !== "") {
+			
+			if (options.noResults) {
+				
+				var noResultsEl = options.noResults;
+				
+				if (typeof options.noResults === "string") {
+					noResultsEl = $(options.noResults);
+				} 
+				
 				if (bool) {
-					$(options.noResults).hide();
+					noResultsEl.hide();
 				} else {
-					$(options.noResults).show();
+					noResultsEl.show();
 				}
 			}
+			
 			return this;
 		};
 		
@@ -216,15 +224,16 @@
 			return this;
 		};
 		
-		this.cache = function () {
+		this.cache = function (doRedraw) {
 			
-			jq_results = $(target);
+			doRedraw = (typeof doRedraw === "undefined") ? true : doRedraw;
 			
-			if (typeof options.noResults === "string" && options.noResults !== "") {
-				jq_results = jq_results.not(options.noResults);
-			}
+			jq_results = options.noResults ? $(target).not(options.noResults) : $(target);
 			
-			var t = (typeof options.selector === "string") ? jq_results.find(options.selector) : $(target).not(options.noResults);
+			var t = (typeof options.selector === "string") 
+						? jq_results.find(options.selector) 
+						: $(target).not(options.noResults);
+						
 			cache = t.map(function () {
 				return e.removeDiacritics(e.strip_html(this.innerHTML));
 			});
@@ -239,7 +248,11 @@
 			 * */
 			val = val || this.val() || "";
 			
-			return this.go();
+			if (doRedraw) {
+				this.go();
+			}
+			
+			return this;
 		};
 		
 		this.trigger = function () {
