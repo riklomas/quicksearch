@@ -1,0 +1,22 @@
+{
+  "name": "quicksearch",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rajibahmed/quicksearch",
+  "authors": [
+    "riklomas<rik@lomalogue.com>"
+  ],
+  "description": "A jQuery plugin for searching through tables, lists, etc quickly.",
+  "main": "jquery.quicksearch.js",
+  "keywords": [
+    "search",
+    "filters"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
