@@ -2,6 +2,9 @@
 
 A [jQuery][jquery_site] based plug-in for filtering large data sets with user input
 
+This is an improved fork of the original work of riklomas <https://github.com/riklomas/quicksearch>.
+This plugin is now maintained by [@DeuxHuitHuit](http://deuxhuithuit.com)
+
 ## Examples
 
 * <http://www.lomalogue.com/jquery/quicksearch/>
