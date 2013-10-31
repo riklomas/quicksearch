@@ -1,4 +1,4 @@
-/*! jQuery-QuickSearch - v2.0.0 - 2013-10-31
+/*! jQuery-QuickSearch - v2.0.1 - 2013-10-31
 * Copyright (c) 2013 Deux Huit Huit (http://deuxhuithuit.com/);
 * Licensed MIT http://deuxhuithuit.mit-license.org */
 /**
@@ -7,6 +7,8 @@
  */
 
 (function($, window, document, undefined) {
+	'use strict';
+	
 	$.fn.quicksearch = function (target, opt) {
 		
 		var defaultDiacriticsRemovalMap = [
@@ -140,12 +142,13 @@
 		this.go = function () {
 			
 			var i = 0,
+				len = 0,
 				numMatchedRows = 0,
 				noresults = true, 
 				query = options.prepareQuery(val),
 				val_empty = (val.replace(' ', '').length === 0);
 			
-			for (var i = 0, len = rowcache.length; i < len; i++) {
+			for (i = 0, len = rowcache.length; i < len; i++) {
 				if (val_empty || options.testQuery(query, cache[i], rowcache[i])) {
 					options.show.apply(rowcache[i]);
 					noresults = false;
@@ -200,7 +203,7 @@
 		};
 		
 		this.strip_html = function (input) {
-			var output = input.replace(new RegExp('<[^<]+\>', 'g'), "");
+			var output = input.replace(new RegExp('<[^<]+\\>', 'g'), "");
 			output = $.trim(output.toLowerCase());
 			return output;
 		};
@@ -227,7 +230,11 @@
 		
 		this.loader = function (bool) {
 			if (typeof options.loader === "string" && options.loader !== "") {
-				 (bool) ? $(options.loader).show() : $(options.loader).hide();
+				if (bool) {
+					$(options.loader).show(); 
+				} else {
+					$(options.loader).hide();
+				}
 			}
 			return this;
 		};
@@ -238,9 +245,7 @@
 			
 			jq_results = options.noResults ? $(target).not(options.noResults) : $(target);
 			
-			var t = (typeof options.selector === "string") 
-						? jq_results.find(options.selector) 
-						: $(target).not(options.noResults);
+			var t = (typeof options.selector === "string") ? jq_results.find(options.selector) : $(target).not(options.noResults);
 						
 			cache = t.map(function () {
 				return e.removeDiacritics(e.strip_html(this.innerHTML));
