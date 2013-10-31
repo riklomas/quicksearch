@@ -139,6 +139,10 @@
 		var timeout, cache, rowcache, jq_results, val = '', 
 			self = this, 
 			options = $.extend($.quicksearch.defaults, opt);
+			
+		// Assure selectors
+		options.noResults = !options.noResults ? $() : $(options.noResults);
+		options.loader = !options.loader ? $() : $(options.loader);
 		
 		this.go = function () {
 			
@@ -215,22 +219,18 @@
 		};
 		
 		this.results = function (bool) {
-			if (!!options.noResults) {
-				var noResultsEl = $(options.noResults);
-				noResultsEl[bool ? 'hide' : 'show']();
+			if (!!options.noResults.length) {
+				options.noResults[bool ? 'hide' : 'show']();
 			}
 			
 			return this;
 		};
 		
 		this.loader = function (bool) {
-			if (typeof options.loader === "string" && options.loader !== "") {
-				if (bool) {
-					$(options.loader).show(); 
-				} else {
-					$(options.loader).hide();
-				}
+			if (!!options.loader.length) {
+				options.loader[bool ? 'show' : 'hide']();
 			}
+			
 			return this;
 		};
 		
@@ -267,11 +267,11 @@
 		this.trigger = function () {
 			if (val.length < options.minValLength) {
 				options.onValTooSmall.call(this, val);
-				return;
+				self.go();
+			} else {
+				this.loader(true);
+				options.onBefore.call(this);
 			}
-			
-			this.loader(true);
-			options.onBefore.call(this);
 			
 			window.clearTimeout(timeout);
 			timeout = window.setTimeout(function () {
