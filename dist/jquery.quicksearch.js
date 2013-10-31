@@ -24,10 +24,10 @@
 			onAfter: $.noop,
 			onValTooSmall: $.noop,
 			show: function () {
-				this.show();
+				$(this).show();
 			},
 			hide: function () {
-				this.hide();
+				$(this).hide();
 			},
 			prepareQuery: function (val) {
 				return val.toLowerCase().split(' ');
@@ -220,7 +220,7 @@
 		this.results = function (bool) {
 			if (!!options.noResults) {
 				var noResultsEl = $(options.noResults);
-				noResultsEl[bool ? 'hide' : 'show'].call(this);
+				noResultsEl[bool ? 'hide' : 'show']();
 			}
 			
 			return this;
@@ -229,9 +229,9 @@
 		this.loader = function (bool) {
 			if (typeof options.loader === "string" && options.loader !== "") {
 				if (bool) {
-					$(options.loader).show.call(this); 
+					$(options.loader).show(); 
 				} else {
-					$(options.loader).hide.call(this);
+					$(options.loader).hide();
 				}
 			}
 			return this;
