@@ -80,7 +80,7 @@ $.ajax({
 *	**bind**
 	Event that the trigger is tied to
 *	**removeDiacritics**
-	Remove diascritics from the search input. Defaults to false.
+	Remove diacritics from the search input. Defaults to false.
 *	**minValLength**
 	Establish a minimum length that the search value must have in order to perform the search. Defaults to 0.
 *	**onBefore**
