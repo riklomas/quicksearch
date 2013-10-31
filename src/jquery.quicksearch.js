@@ -24,10 +24,10 @@
 				return;
 			},
 			show: function () {
-				this.style.display = "";
+				this.show();
 			},
 			hide: function () {
-				this.style.display = "none";
+				this.hide();
 			},
 			prepareQuery: function (val) {
 				return val.toLowerCase().split(' ');
@@ -149,7 +149,7 @@
 			var i = 0,
 				len = 0,
 				numMatchedRows = 0,
-				noresults = true, 
+				noresults = true,
 				query,
 				val_empty = (val.replace(' ', '').length === 0);
 				
@@ -258,7 +258,8 @@
 			var t = (typeof options.selector === "string") ? jq_results.find(options.selector) : $(target).not(options.noResults);
 						
 			cache = t.map(function () {
-				return self.removeDiacritics(self.strip_html(this.innerHTML));
+				var temp = self.strip_html(this.innerHTML);
+				return options.removeDiacritics ? self.removeDiacritics(temp) : temp;
 			});
 			
 			rowcache = jq_results.map(function () {
