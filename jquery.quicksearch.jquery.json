@@ -4,16 +4,10 @@
   "description": "A jQuery plugin for searching through tables, lists, etc quickly",
   "version": "2.0.0",
   "homepage": "",
-  "author": [
-    {
-      "name": "Deux Huit Huit",
-      "url": "http://deuxhuithuit.com/"
-    },
-    {
-      "name": "Rik Lomas",
-      "url": "http://www.riklomas.co.uk/"
-    }
-  ],
+  "author": {
+    "name": "Deux Huit Huit",
+    "url": "http://deuxhuithuit.com/"
+  },
   "licenses": [
     {
       "type": "MIT",
@@ -26,6 +20,9 @@
   },
   "bugs": {
     "url": "https://github.com/DeuxHuitHuit/quicksearch/issues"
+  },
+  "dependencies": {
+     "jquery": ">=1.4"
   },
   "keywords": ["quicksearch"]
 }
