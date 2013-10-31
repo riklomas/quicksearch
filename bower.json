@@ -1,17 +1,33 @@
 {
-  "name": "quicksearch",
-  "version": "0.0.0",
-  "homepage": "https://github.com/rajibahmed/quicksearch",
-  "authors": [
-    "riklomas<rik@lomalogue.com>"
+  "name": "jquery.quicksearch",
+  "title": "jQuery-QuickSearch",
+  "description": "A jQuery plugin for searching through tables, lists, etc quickly",
+  "version": "2.0.0",
+  "homepage": "",
+  "author": [
+    {
+      "name": "Deux Huit Huit",
+      "url": "http://deuxhuithuit.com/"
+    },
+    {
+      "name": "Rik Lomas",
+      "url": "http://www.riklomas.co.uk/"
+    }
   ],
-  "description": "A jQuery plugin for searching through tables, lists, etc quickly.",
-  "main": "jquery.quicksearch.js",
-  "keywords": [
-    "search",
-    "filters"
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://deuxhuithuit.mit-license.org/"
+    }
   ],
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DeuxHuitHuit/quicksearch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DeuxHuitHuit/quicksearch/issues"
+  },
+  "keywords": ["quicksearch"],
   "ignore": [
     "**/.*",
     "node_modules",
