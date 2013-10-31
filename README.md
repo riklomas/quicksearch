@@ -17,6 +17,7 @@ the form and input are not build by the script any more.
 ```js
 $(input_selector).quicksearch(elements_to_search, options);
 ```
+
 #### Example on table rows
 ```html
 /* Example form */
@@ -34,9 +35,9 @@ $(input_selector).quicksearch(elements_to_search, options);
 	</tbody>
 </table>
 
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="jquery.quicksearch.js"></script>
-<script type="text/javascript">
+<script src="jquery.js"></script>
+<script src="jquery.quicksearch.js"></script>
+<script>
 	$('input#search').quicksearch('table tbody tr');
 </script>
 ```
@@ -65,6 +66,7 @@ $.ajax({
 	}
 });
 ```
+
 ## Options
 
 * 	**delay**
@@ -102,6 +104,8 @@ $.ajax({
 	- stripped text from 'selector'
 	- element to be potentially hidden
 
+### Callbacks
+Functions are always `call`'d or `apply`'d, so except `this` to be the plugin object.
 
 For example:
 ```js
@@ -112,11 +116,16 @@ $('input#search').quicksearch('table tbody tr', {
 	'loader': 'span.loading',
 	'noResults': 'tr#noresults',
 	'bind': 'keyup keydown',
+	'minValLength': 2,
+	'removeDiacritics': true,
 	'onBefore': function () {
 		console.log('on before');
 	},
 	'onAfter': function () {
 		console.log('on after');
+	},
+	'onValTooSmall': function (val) {
+		console.log('value ' + val + ' is too small');
 	},
 	'show': function () {
 		$(this).addClass('show');
