@@ -5,10 +5,33 @@
 		<title>quickSearch jQuery plug-in</title>
 		
 		<link rel="stylesheet" href="style.css" type="text/css" media="all" title="" />
+		<script>
+		(function (w, doc,co) {
+			// http://stackoverflow.com/questions/901115/get-query-string-values-in-javascript
+			var u = {},
+				e,
+				a = /\+/g,  // Regex for replacing addition symbol with a space
+				r = /([^&=]+)=?([^&]*)/g,
+				d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+				q = w.location.search.substring(1),
+				v = '2.0.3';
+
+			while (e = r.exec(q)) {
+				u[d(e[1])] = d(e[2]);
+			}
+			
+			if (!!u.jquery) {
+				v = u.jquery;
+			}	
+
+			doc.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/'+v+'/jquery.min.js">' + "<" + '/' + 'script>');
+			co.log('\nLoading jQuery v' + v + '\n');
+		})(window, document, console);
+		</script>
 		
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-		<script type="text/javascript" src="../jquery.quicksearch.js"></script>
-		<script type="text/javascript">
+		<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script-->
+		<script src="../src/jquery.quicksearch.js"></script>
+		<script>
 			$(function () {
 				/*
 				Example 1
@@ -66,7 +89,7 @@
 	<body>
 		<h1>jQuery quickSearch</h1>
 		
-		<p class="github"><a href="http://github.com/riklomas/quicksearch">More information and download at Github</a></p>
+		<p class="github"><a href="http://github.com/DeuxHuitHuit/quicksearch">More information and download at Github</a></p>
 		
 		<h2 id="examples">Examples</h2>
 		<h3>Simple example</h3>
@@ -623,8 +646,7 @@ $('input#add_to_list').click(function () {
 
 <p><a href="super_table.html">Super table example</a></p>
 
-<p class="github"><a href="http://github.com/riklomas/quicksearch">More information and download at Github</a></p>
+<p class="github"><a href="http://github.com/DeuxHuitHuit/quicksearch">More information and download at Github</a></p>
 
-	    
 	</body>
 </html>
