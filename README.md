@@ -79,6 +79,10 @@ $.ajax({
 	A query selector to show if there's no results for the search
 *	**bind**
 	Event that the trigger is tied to
+*	**removeDiacritics**
+	Remove diascritics from the search input. Defaults to false.
+*	**minValLength**
+	Establish a minimum length that the search value must have in order to perform the search. Defaults to 0.
 *	**onBefore**
 	Function to call before trigger is called
 *	**onAfter**
