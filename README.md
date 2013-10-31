@@ -87,6 +87,8 @@ $.ajax({
 	Function to call before trigger is called
 *	**onAfter**
 	Function to call after trigger is called
+*	**onValTooSmall**
+	Function to call when the value does not exceeds the `minValLength` option.
 *	**show**
 	Function that will add styles to matched elements
 *	**hide**

@@ -17,12 +17,9 @@
 			bind: 'keyup',
 			removeDiacritics: false,
 			minValLength: 0,
-			onBefore: function () { 
-				return;
-			},
-			onAfter: function () { 
-				return;
-			},
+			onBefore: $.noop,
+			onAfter: $.noop,
+			onValTooSmall: $.noop,
 			show: function () {
 				this.show();
 			},
@@ -177,7 +174,7 @@
 			
 			this.matchedResultsCount = numMatchedRows;
 			this.loader(false);
-			options.onAfter();
+			options.onAfter.call(this);
 			return this;
 		};
 		
@@ -228,9 +225,9 @@
 				} 
 				
 				if (bool) {
-					noResultsEl.hide();
+					noResultsEl.hide.call(this);
 				} else {
-					noResultsEl.show();
+					noResultsEl.show.call(this);
 				}
 			}
 			
@@ -240,9 +237,9 @@
 		this.loader = function (bool) {
 			if (typeof options.loader === "string" && options.loader !== "") {
 				if (bool) {
-					$(options.loader).show(); 
+					$(options.loader).show.call(this); 
 				} else {
-					$(options.loader).hide();
+					$(options.loader).hide.call(this);
 				}
 			}
 			return this;
@@ -280,11 +277,12 @@
 		
 		this.trigger = function () {
 			if (val.length < options.minValLength) {
+				options.onValTooSmall.call(this, val);
 				return;
 			}
 			
 			this.loader(true);
-			options.onBefore();
+			options.onBefore.call(this);
 			
 			window.clearTimeout(timeout);
 			timeout = window.setTimeout(function () {
@@ -300,12 +298,7 @@
 		this.loader(false);
 		
 		return this.each(function () {
-			
-			/*
-			 * Changed from .bind to .on.
-			 * */
 			$(this).on(options.bind, function () {
-				
 				val = $(this).val();
 				self.trigger();
 			});
