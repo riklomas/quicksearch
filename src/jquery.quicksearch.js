@@ -16,6 +16,7 @@
 			matchedResultsCount: 0,
 			bind: 'keyup',
 			removeDiacritics: false,
+			minValLength: 0,
 			onBefore: function () { 
 				return;
 			},
@@ -278,6 +279,10 @@
 		};
 		
 		this.trigger = function () {
+			if (val.length < options.minValLength) {
+				return;
+			}
+			
 			this.loader(true);
 			options.onBefore();
 			
