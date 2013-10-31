@@ -1,3 +1,8 @@
+/**
+ * Copyrights: Deux Huit Huit, Rik Lomas.
+ * Licensed MIT: http://deuxhuithuit.mit-license.org
+ */
+
 (function($, window, document, undefined) {
 	$.fn.quicksearch = function (target, opt) {
 		

@@ -151,6 +151,8 @@ jQuery quicksearch is made by [Rik Lomas][rik_site] at [Lomalogue][lomalogue_sit
 
 Thanks to [Seth F.][thelizardreborn] for fixes and [Krzysiek Goj][goj] for the  testQuery and prepareQuery option updates
 
+Now licensed under the MIT License: <http://deuxhuithuit.mit-license.org>
+
 [jquery_site]: http://www.jquery.com
 [rik_site]: http://www.riklomas.co.uk
 [lomalogue_site]: http://www.lomalogue.com
