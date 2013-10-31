@@ -79,6 +79,7 @@ module.exports = function(grunt) {
 				report: 'gzip',
 				sourceMap: 'dist/<%= pkg.name %>.min.js.map',
 				sourceMappingURL: '<%= pkg.name %>.min.js.map',
+				sourceMapRoot: '../',
 				mangle: true,
 				compress: {
 					global_defs: {
@@ -104,10 +105,25 @@ module.exports = function(grunt) {
 			}
 		}
 	});
-
-	// Default task.
 	
+	// fix source map url
+	grunt.registerTask('fix-source-map', 'Fix the wrong file path in the source map', function() {
+		var sourceMapPath = grunt.template.process('<%= uglify.options.sourceMap %>');
+		var sourceMapUrl = grunt.template.process('<%= uglify.options.sourceMappingURL %>');
+		var diff = sourceMapPath.replace(sourceMapUrl, '');
+		var sourceMap = grunt.file.readJSON(sourceMapPath);
+		sourceMap.file = sourceMap.file.replace(diff, '');
+		var newSources = [];
+		sourceMap.sources.forEach(function (elem) {
+			newSources.push(elem.replace(diff, ''));
+		});
+		sourceMap.sources = newSources;
+		grunt.log.write(sourceMap.sources);
+		grunt.file.write(sourceMapPath, JSON.stringify(sourceMap));
+	});
+	
+	// Default tasks.
 	grunt.registerTask('dev', ['jshint','complexity']);
-	grunt.registerTask('build', ['concat','uglify']);
+	grunt.registerTask('build', ['concat','uglify','fix-source-map']);
 	grunt.registerTask('default', ['dev','build']);
 };
