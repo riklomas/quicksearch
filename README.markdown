@@ -2,6 +2,8 @@
 
 A [jQuery][jquery_site] based plug-in for filtering large data sets with user input
 
+### This repro is no longer maintained. See <https://github.com/DeuxHuitHuit/quicksearch/> for a up-to-date version.
+
 ## Examples
 
 * <http://www.lomalogue.com/jquery/quicksearch/>
