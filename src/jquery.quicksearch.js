@@ -215,20 +215,9 @@
 		};
 		
 		this.results = function (bool) {
-			
-			if (options.noResults) {
-				
-				var noResultsEl = options.noResults;
-				
-				if (typeof options.noResults === "string") {
-					noResultsEl = $(options.noResults);
-				} 
-				
-				if (bool) {
-					noResultsEl.hide.call(this);
-				} else {
-					noResultsEl.show.call(this);
-				}
+			if (!!options.noResults) {
+				var noResultsEl = $(options.noResults);
+				noResultsEl[bool ? 'hide' : 'show'].call(this);
 			}
 			
 			return this;
