@@ -5,10 +5,15 @@ A [jQuery][jquery_site] based plug-in for filtering large data sets with user in
 This is an improved fork of the original work of riklomas <https://github.com/riklomas/quicksearch>.
 This plugin is now maintained by [@DeuxHuitHuit](http://deuxhuithuit.com)
 
+## Project pages
+
+* <http://deuxhuithuit.github.io/quicksearch/>
+* <http://plugins.jquery.com/jquery.quicksearch/>
+
 ## Examples
 
-* <http://www.lomalogue.com/jquery/quicksearch/>
-* <http://www.lomalogue.com/jquery/quicksearch/super_table.html>
+* <http://deuxhuithuit.github.io/quicksearch/r/examples/>
+* <http://deuxhuithuit.github.io/quicksearch/r/examples/super_table.html>
 
 ## Usage
 
@@ -80,7 +85,7 @@ $.ajax({
 *	**noResults**
 	A query selector to show if there's no results for the search
 *	**bind**
-	Event that the trigger is tied to
+	Event that the trigger is tied to. Defaults to 'keyup search'
 *	**removeDiacritics**
 	Remove diacritics from the search input. Defaults to false.
 *	**minValLength**
@@ -162,7 +167,8 @@ Under the same licenses as the jQuery library itself: <http://docs.jquery.com/Li
 
 ## Credits
 
-jQuery quicksearch is made by [Rik Lomas][rik_site] at [Lomalogue][lomalogue_site]
+jQuery quicksearch was made by [Rik Lomas][rik_site] at [Lomalogue][lomalogue_site].
+It is now maintain by [Deux Huit Huit][288]
 
 Thanks to [Seth F.][thelizardreborn] for fixes and [Krzysiek Goj][goj] for the  testQuery and prepareQuery option updates
 
@@ -178,3 +184,4 @@ Now licensed under the MIT License: <http://deuxhuithuit.mit-license.org>
 [twitter_follow]: http://twitter.com/riklomas
 [thelizardreborn]: http://github.com/thelizardreborn
 [goj]: http://github.com/goj
+[288]: http://deuxhuithuit.com/

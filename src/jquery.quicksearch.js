@@ -14,7 +14,7 @@
 			loader: null,
 			noResults: '',
 			matchedResultsCount: 0,
-			bind: 'keyup',
+			bind: 'keyup search',
 			removeDiacritics: false,
 			minValLength: 0,
 			onBefore: $.noop,
