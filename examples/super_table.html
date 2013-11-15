@@ -2,14 +2,39 @@
 <html>
 	<head>
 		<title>Super table</title>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-		<script type="text/javascript" src="../jquery.quicksearch.js"></script>
-		<script type="text/javascript">
+		
+		<script>
+		(function (w, doc,co) {
+			// http://stackoverflow.com/questions/901115/get-query-string-values-in-javascript
+			var u = {},
+				e,
+				a = /\+/g,  // Regex for replacing addition symbol with a space
+				r = /([^&=]+)=?([^&]*)/g,
+				d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+				q = w.location.search.substring(1),
+				v = '2.0.3';
+
+			while (e = r.exec(q)) {
+				u[d(e[1])] = d(e[2]);
+			}
+			
+			if (!!u.jquery) {
+				v = u.jquery;
+			}	
+
+			doc.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/'+v+'/jquery.min.js">' + "<" + '/' + 'script>');
+			co.log('\nLoading jQuery v' + v + '\n');
+		})(window, document, console);
+		</script>
+		<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script-->
+		<script src="../src/jquery.quicksearch.js"></script>
+		<script>
 			$(document).ready(function () {
 				$("#id_search").quicksearch("table tbody tr", {
 					noResults: '#noresults',
 					stripeRows: ['odd', 'even'],
-					loader: 'span.loading'
+					loader: 'span.loading',
+					minValLength: 2
 				});
 			});
 		</script>
@@ -20,7 +45,7 @@
 	
 		<form action="#">
 			<fieldset>
-				<input type="text" name="search" value="" id="id_search" /> <span class="loading">Loading...</span>
+				<input type="search" name="search" value="" id="id_search" /> <span class="loading">Loading...</span>
 			</fieldset>
 		</form>	
 		
@@ -14599,5 +14624,9 @@
 	
 </tbody>
 </table>
-	</body>
+
+<p><a href="index.html">Simpler table example</a></p>
+
+<p class="github"><a href="http://github.com/DeuxHuitHuit/quicksearch">More information and download at Github</a></p>
+</body>
 </html>
