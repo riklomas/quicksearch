@@ -3,7 +3,7 @@
 A [jQuery][jquery_site] based plug-in for filtering large data sets with user input
 
 This is an improved fork of the original work of riklomas <https://github.com/riklomas/quicksearch>.
-This plugin is now maintained by [@DeuxHuitHuit](http://deuxhuithuit.com)
+This plugin is now maintained by [@DeuxHuitHuit][288]
 
 ## Project pages
 
@@ -156,14 +156,11 @@ If you have a bug fix, the best way to help would be to:
 * Click "pull request" at the top of my Github page
 
 I can't promise to answer every question about quicksearch, 
-but please do [report bugs here][issues] or [send me a message on Github][mail_me]. 
-
-You can [watch quicksearch][github_watch] for updates or [follow me on Github][github_follow] 
-and [on Twitter][twitter_follow].
+but please do [report bugs here][issues].
 
 ## License
 
-Under the same licenses as the jQuery library itself: <http://docs.jquery.com/License>
+Now licensed under the MIT License: <http://deuxhuithuit.mit-license.org>
 
 ## Credits
 
@@ -172,16 +169,10 @@ It is now maintain by [Deux Huit Huit][288]
 
 Thanks to [Seth F.][thelizardreborn] for fixes and [Krzysiek Goj][goj] for the  testQuery and prepareQuery option updates
 
-Now licensed under the MIT License: <http://deuxhuithuit.mit-license.org>
-
 [jquery_site]: http://www.jquery.com
 [rik_site]: http://www.riklomas.co.uk
 [lomalogue_site]: http://www.lomalogue.com
-[issues]: http://github.com/riklomas/quicksearch/issues
-[mail_me]: http://github.com/inbox/new/riklomas
-[github_watch]: http://github.com/riklomas/quicksearch/toggle_watch
-[github_follow]: http://github.com/users/follow?target=riklomas
-[twitter_follow]: http://twitter.com/riklomas
+[issues]: http://github.com/deuxhuithuit/quicksearch/issues
 [thelizardreborn]: http://github.com/thelizardreborn
 [goj]: http://github.com/goj
 [288]: http://deuxhuithuit.com/
