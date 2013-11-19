@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/DeuxHuitHuit/quicksearch/issues"
   },
-  "keywords": ["quicksearch"],
+  "keywords": ["quicksearch","search","filter"],
   "ignore": [
     "**/.*",
     "node_modules",
