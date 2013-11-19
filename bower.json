@@ -28,6 +28,9 @@
     "url": "https://github.com/DeuxHuitHuit/quicksearch/issues"
   },
   "keywords": ["quicksearch","search","filter"],
+  "dependencies":{
+    "jquery":">=1.8"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
