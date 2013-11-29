@@ -1,3 +1,6 @@
+/*! jQuery-QuickSearch - v2.0.2 - 2013-11-15
+* Copyright (c) 2013 Deux Huit Huit (http://deuxhuithuit.com/);
+* Licensed MIT http://deuxhuithuit.mit-license.org */
 /**
  * Copyrights: Deux Huit Huit, Rik Lomas.
  * Licensed MIT: http://deuxhuithuit.mit-license.org
@@ -15,6 +18,7 @@
 			noResults: '',
 			matchedResultsCount: 0,
 			bind: 'keyup search',
+			resetBind: 'reset',
 			removeDiacritics: false,
 			minValLength: 0,
 			onBefore: $.noop,
@@ -136,7 +140,7 @@
 			return str;
 		};
 		
-		var timeout, cache, rowcache, jq_results, val = '', 
+		var timeout, cache, rowcache, jq_results, val = '', last_val = '', 
 			self = this, 
 			options = $.extend($.quicksearch.defaults, opt);
 			
@@ -160,7 +164,11 @@
 			query = options.prepareQuery(val);
 			
 			for (i = 0, len = rowcache.length; i < len; i++) {
-				if (val_empty || options.testQuery(query, cache[i], rowcache[i])) {
+				if (query.length > 0 && query[0].length < options.minValLength) {
+					options.show.apply(rowcache[i]);
+					noresults = false;
+					numMatchedRows++;
+				} else if (val_empty || options.testQuery(query, cache[i], rowcache[i])) {
 					options.show.apply(rowcache[i]);
 					noresults = false;
 					numMatchedRows++;
@@ -179,6 +187,7 @@
 			this.matchedResultsCount = numMatchedRows;
 			this.loader(false);
 			options.onAfter.call(this);
+			last_val = val;
 			return this;
 		};
 		
@@ -188,6 +197,19 @@
 		this.search = function (submittedVal) {
 			val = submittedVal;
 			self.trigger();
+		};
+		
+		/*
+		 * External API so that users can perform search programatically. 
+		 * */
+		this.reset = function () {
+			val = '';
+			this.loader(true);
+			options.onBefore.call(this);
+			window.clearTimeout(timeout);
+			timeout = window.setTimeout(function () {
+				self.go();
+			}, options.delay);
 		};
 		
 		/*
@@ -265,18 +287,19 @@
 		};
 		
 		this.trigger = function () {
-			if (val.length < options.minValLength) {
+			if ((val.length < options.minValLength && val.length > last_val.length) || (val.length < options.minValLength-1 && val.length < last_val.length)) {
 				options.onValTooSmall.call(this, val);
 				self.go();
 			} else {
 				this.loader(true);
 				options.onBefore.call(this);
+				window.clearTimeout(timeout);
+				timeout = window.setTimeout(function () {
+					self.go();
+				}, options.delay);
 			}
 			
-			window.clearTimeout(timeout);
-			timeout = window.setTimeout(function () {
-				self.go();
-			}, options.delay);
+			
 			
 			return this;
 		};
@@ -290,6 +313,10 @@
 			$(this).on(options.bind, function () {
 				val = $(this).val();
 				self.trigger();
+			});
+			$(this).on(options.resetBind, function () {
+				val = '';
+				self.reset();
 			});
 		});
 		
