@@ -17,8 +17,7 @@
 			loader: null,
 			noResults: '',
 			matchedResultsCount: 0,
-			bind: 'keyup search',
-			resetBind: 'reset',
+			bind: 'keyup search input',
 			removeDiacritics: false,
 			minValLength: 0,
 			onBefore: $.noop,
@@ -142,7 +141,7 @@
 		
 		var timeout, cache, rowcache, jq_results, val = '', last_val = '', 
 			self = this, 
-			options = $.extend($.quicksearch.defaults, opt);
+			options = $.extend({}, $.quicksearch.defaults, opt);
 			
 		// Assure selectors
 		options.noResults = !options.noResults ? $() : $(options.noResults);

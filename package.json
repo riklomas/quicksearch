@@ -2,7 +2,7 @@
   "name": "jquery.quicksearch",
   "title": "jQuery-QuickSearch",
   "description": "A jQuery plugin for searching through tables, lists, etc quickly",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "homepage": "",
   "author": [
     {
@@ -29,9 +29,8 @@
   },
   "dependencies": {
     "grunt": "~0.4.1",
-    "grunt-cli": "~0.1.9",
     "grunt-complexity": "~0.1.0",
-    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.7",
     "grunt-contrib-jshint": "~0.4.3",
     "grunt-contrib-concat": "~0.2.0",
     "grunt-contrib-watch": "~0.4.4",

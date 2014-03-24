@@ -1,8 +1,5 @@
-/*! jQuery-QuickSearch - v2.0.2 - 2013-11-29
-* Copyright (c) 2013 Deux Huit Huit (http://deuxhuithuit.com/);
-* Licensed MIT http://deuxhuithuit.mit-license.org */
-/*! jQuery-QuickSearch - v2.0.2 - 2013-11-15
-* Copyright (c) 2013 Deux Huit Huit (http://deuxhuithuit.com/);
+/*! jQuery-QuickSearch - v2.0.3 - 2014-03-24
+* Copyright (c) 2014 Deux Huit Huit (http://deuxhuithuit.com/);
 * Licensed MIT http://deuxhuithuit.mit-license.org */
 /**
  * Copyrights: Deux Huit Huit, Rik Lomas.
@@ -20,8 +17,7 @@
 			loader: null,
 			noResults: '',
 			matchedResultsCount: 0,
-			bind: 'keyup search',
-			resetBind: 'reset',
+			bind: 'keyup search input',
 			removeDiacritics: false,
 			minValLength: 0,
 			onBefore: $.noop,
@@ -145,7 +141,7 @@
 		
 		var timeout, cache, rowcache, jq_results, val = '', last_val = '', 
 			self = this, 
-			options = $.extend($.quicksearch.defaults, opt);
+			options = $.extend({}, $.quicksearch.defaults, opt);
 			
 		// Assure selectors
 		options.noResults = !options.noResults ? $() : $(options.noResults);
