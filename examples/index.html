@@ -36,7 +36,7 @@
 				/*
 				Example 1
 				*/
-				$('input#id_search').quicksearch('table tbody tr');
+				$('input#id_search').quicksearch('table#table_example tbody tr');
 				
 				/*
 				Example 2 
@@ -46,7 +46,7 @@
 					'selector': 'th',
 					'stripeRows': ['odd', 'even'],
 					'loader': 'span.loading',
-					'bind': 'keyup click',
+					'bind': 'keyup click input',
 					'show': function () {
 						this.style.color = '';
 					},
@@ -576,7 +576,7 @@ $('input#id_search2').quicksearch('table#table_example2 tbody tr', {
 	'selector': 'th',
 	'stripeRows': ['odd', 'even'],
 	'loader': 'span.loading',
-	'bind': 'keyup click',
+	'bind': 'keyup click input',
 	'show': function () {
 		this.style.color = '';
 	},
