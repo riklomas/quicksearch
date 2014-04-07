@@ -41,7 +41,7 @@
 		
 		
 		/*
-		 * Allow to use this plugin without useing accents		
+		 * Allow to use this plugin without using accents		
 		 * MORE INFOS HERE : http://stackoverflow.com/a/18391901/2282895
 		 */
          var removeAccents = function(str){	
