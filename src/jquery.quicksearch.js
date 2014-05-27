@@ -259,10 +259,10 @@
 			
 			doRedraw = (typeof doRedraw === "undefined") ? true : doRedraw;
 			
-			jq_results = options.noResults ? $(target).not(options.noResults) : $(target);
+			jq_results = $(target).not(options.noResults);
 			
-			var t = (typeof options.selector === "string") ? jq_results.find(options.selector) : $(target).not(options.noResults);
-						
+			var t = (typeof options.selector === "string") ? jq_results.find(options.selector) : jq_results;
+			
 			cache = t.map(function () {
 				var temp = self.strip_html(this.innerHTML);
 				return options.removeDiacritics ? self.removeDiacritics(temp) : temp;
