@@ -1,5 +1,8 @@
-/*! jQuery-QuickSearch - v2.0.3 - 2014-03-24
+/*! jQuery-QuickSearch - v2.0.4 - 2014-05-27
 * Copyright (c) 2014 Deux Huit Huit (http://deuxhuithuit.com/);
+* Licensed MIT http://deuxhuithuit.mit-license.org */
+/*! jQuery-QuickSearch - v2.0.2 - 2013-11-15
+* Copyright (c) 2013 Deux Huit Huit (http://deuxhuithuit.com/);
 * Licensed MIT http://deuxhuithuit.mit-license.org */
 /**
  * Copyrights: Deux Huit Huit, Rik Lomas.
@@ -259,10 +262,10 @@
 			
 			doRedraw = (typeof doRedraw === "undefined") ? true : doRedraw;
 			
-			jq_results = options.noResults ? $(target).not(options.noResults) : $(target);
+			jq_results = $(target).not(options.noResults);
 			
-			var t = (typeof options.selector === "string") ? jq_results.find(options.selector) : $(target).not(options.noResults);
-						
+			var t = (typeof options.selector === "string") ? jq_results.find(options.selector) : jq_results;
+			
 			cache = t.map(function () {
 				var temp = self.strip_html(this.innerHTML);
 				return options.removeDiacritics ? self.removeDiacritics(temp) : temp;
