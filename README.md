@@ -86,6 +86,8 @@ $.ajax({
 	A query selector to show if there's no results for the search
 *	**bind**
 	Event that the trigger is tied to. Defaults to 'keyup search'
+*	**resetBind**
+	Event that the reset event is tied to. Defaults to 'reset'
 *	**removeDiacritics**
 	Remove diacritics from the search input. Defaults to false.
 *	**minValLength**
