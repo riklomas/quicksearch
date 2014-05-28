@@ -3,6 +3,7 @@
   "title": "jQuery-QuickSearch",
   "description": "A jQuery plugin for searching through tables, lists, etc quickly",
   "version": "2.0.4",
+  "main": "dist/jquery.quicksearch.js",
   "homepage": "",
   "author": [
     {
