@@ -154,8 +154,10 @@ If you have a bug fix, the best way to help would be to:
 
 * Fork the project by clicking "Fork this project" at the top of this page
 * Clone your version of quicksearch from your Github account to your computer
+* Checkout the `dev` branch
 * Fix and commit the bugs, then push your version to your Github account
 * Click "pull request" at the top of my Github page
+* Please create the "Pull Request" to push in the `branch`
 
 I can't promise to answer every question about quicksearch, 
 but please do [report bugs here][issues].
