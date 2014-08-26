@@ -1,4 +1,4 @@
-/*! jQuery-QuickSearch - v2.0.4 - 2014-05-27
+/*! jQuery-QuickSearch - v2.0.5 - 2014-08-26
 * Copyright (c) 2014 Deux Huit Huit (http://deuxhuithuit.com/);
 * Licensed MIT http://deuxhuithuit.mit-license.org */
 /*! jQuery-QuickSearch - v2.0.2 - 2013-11-15
@@ -237,7 +237,7 @@
 		};
 		
 		this.strip_html = function (input) {
-			var output = input.replace(new RegExp('<[^<]+\\>', 'g'), "");
+			var output = input.replace(new RegExp('<[^<]+\\>', 'g'), ' ');
 			output = $.trim(output.toLowerCase());
 			return output;
 		};
