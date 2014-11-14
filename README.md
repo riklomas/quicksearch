@@ -8,6 +8,7 @@ This plugin is now maintained by [@DeuxHuitHuit][288]
 ## Project pages
 
 * <http://deuxhuithuit.github.io/quicksearch/>
+* <https://www.npmjs.org/package/jquery.quicksearch/>
 * <http://plugins.jquery.com/jquery.quicksearch/>
 
 ## Examples
