@@ -3,11 +3,11 @@
   "title": "jQuery-QuickSearch",
   "description": "A jQuery plugin for searching through tables, lists, etc quickly",
   "version": "2.0.5",
-  "homepage": "",
+  "homepage": "http://deuxhuithuit.github.io/quicksearch/",
   "author": [
     {
       "name": "Deux Huit Huit",
-      "url": "http://deuxhuithuit.com/"
+      "url": "https://deuxhuithuit.com/"
     },
     {
       "name": "Rik Lomas",
@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/DeuxHuitHuit/quicksearch/issues"
   },
-  "dependencies": {
+  "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-complexity": "~0.1.0",
     "grunt-contrib-uglify": "~0.2.7",
@@ -37,5 +37,13 @@
     "grunt-banner": "~0.2.0",
     "matchdep": "~0.3.0"
   },
-  "keywords": ["quicksearch"]
+  "dependencies": {
+     "jquery": ">=1.4"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ajax-search",
+    "search",
+    "quicksearch"
+  ]
 }
