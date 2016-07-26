@@ -6,6 +6,7 @@
 			selector: null,
 			stripeRows: null,
 			loader: null,
+			caseSensitive: false,
 			noResults: '',
 			matchedResultsCount: 0,
 			bind: 'keyup',
@@ -99,7 +100,10 @@
 		
 		this.strip_html = function (input) {
 			var output = input.replace(new RegExp('<[^<]+\>', 'g'), "");
-			output = $.trim(output.toLowerCase());
+			if (typeof options.caseSensitive === "boolean" && options.caseSensitive === true) {
+				output = output.toLowerCase();
+			}
+			output = $.trim(output);
 			return output;
 		};
 		
