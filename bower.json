@@ -1,0 +1,42 @@
+{
+  "name": "jquery.quicksearch",
+  "title": "jQuery-QuickSearch",
+  "description": "A jQuery plugin for searching through tables, lists, etc quickly",
+  "version": "2.0.5",
+  "main": "dist/jquery.quicksearch.js",
+  "homepage": "",
+  "author": [
+    {
+      "name": "Deux Huit Huit",
+      "url": "http://deuxhuithuit.com/"
+    },
+    {
+      "name": "Rik Lomas",
+      "url": "http://www.riklomas.co.uk/"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://deuxhuithuit.mit-license.org/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DeuxHuitHuit/quicksearch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DeuxHuitHuit/quicksearch/issues"
+  },
+  "keywords": ["quicksearch","search","filter"],
+  "dependencies":{
+    "jquery":">=1.8"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
