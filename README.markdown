@@ -13,56 +13,57 @@ A [jQuery][jquery_site] based plug-in for filtering large data sets with user in
 
 Note that the usage has changed in the latest version of quicksearch, the code is *not* backwards compatible,
 the form and input are not build by the script any more.
-
-	$(input_selector).quicksearch(elements_to_search, options);
-
+```js
+$(input_selector).quicksearch(elements_to_search, options);
+```
 #### Example on table rows
+```html
+/* Example form */
+<form>
+	<input type="text" id="search">
+</form>
 
-	/* Example form */
-	<form>
-		<input type="text" id="search">
-	</form>
-	
-	/* Example table */
-	<table>
-		<tbody>
-			<tr>
-				<td>Test cell</td>
-				<td>Another test cell</td>
-			</tr>
-		</tbody>
-	</table>
-	
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="jquery.quicksearch.js"></script>
-	<script type="text/javascript">
-		$('input#search').quicksearch('table tbody tr');
-	</script>
+/* Example table */
+<table>
+	<tbody>
+		<tr>
+			<td>Test cell</td>
+			<td>Another test cell</td>
+		</tr>
+	</tbody>
+</table>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.quicksearch.js"></script>
+<script type="text/javascript">
+	$('input#search').quicksearch('table tbody tr');
+</script>
+```
 
 #### Example on the `<th>` elements on a table row
-
-	$('input#search').quicksearch('table tbody tr', {
-		selector: 'th'
-	});
-
+```js
+$('input#search').quicksearch('table tbody tr', {
+	selector: 'th'
+});
+```
 #### Example of how to use with JS
-
-	var qs = $('input#id_search_list').quicksearch('ul#list_example li');
-	$('ul#list_example').append('<li>Loaded with Ajax</li>');
-	qs.cache();
-
+```js
+var qs = $('input#id_search_list').quicksearch('ul#list_example li');
+$('ul#list_example').append('<li>Loaded with Ajax</li>');
+qs.cache();
+```
 #### Example of how to use with Ajax
-
-	var qs = $('input#search').quicksearch('table tbody tr');
-	$.ajax({
-		'type': 'GET',
-		'url': 'index.html',
-		'success': function (data) {
-			$('table tbody tr').append(data);
-			qs.cache();
-		}
-	});
-
+```js
+var qs = $('input#search').quicksearch('table tbody tr');
+$.ajax({
+	'type': 'GET',
+	'url': 'index.html',
+	'success': function (data) {
+		$('table tbody tr').append(data);
+		qs.cache();
+	}
+});
+```
 ## Options
 
 * 	#### delay
@@ -96,34 +97,34 @@ the form and input are not build by the script any more.
 
 
 For example:
-
-	$('input#search').quicksearch('table tbody tr', {
-		'delay': 100,
-		'selector': 'th',
-		'stripeRows': ['odd', 'even'],
-		'loader': 'span.loading',
-		'noResults': 'tr#noresults',
-		'bind': 'keyup keydown',
-		'onBefore': function () {
-			console.log('on before');
-		},
-		'onAfter': function () {
-			console.log('on after');
-		},
-		'show': function () {
-			$(this).addClass('show');
-		},
-		'hide': function () {
-			$(this).removeClass('show');
-		}
-		'prepareQuery': function (val) {
-			return new RegExp(val, "i");
-		},
-		'testQuery': function (query, txt, _row) {
-			return query.test(txt);
-		}
-	});
-
+```js
+$('input#search').quicksearch('table tbody tr', {
+	'delay': 100,
+	'selector': 'th',
+	'stripeRows': ['odd', 'even'],
+	'loader': 'span.loading',
+	'noResults': 'tr#noresults',
+	'bind': 'keyup keydown',
+	'onBefore': function () {
+		console.log('on before');
+	},
+	'onAfter': function () {
+		console.log('on after');
+	},
+	'show': function () {
+		$(this).addClass('show');
+	},
+	'hide': function () {
+		$(this).removeClass('show');
+	}
+	'prepareQuery': function (val) {
+		return new RegExp(val, "i");
+	},
+	'testQuery': function (query, txt, _row) {
+		return query.test(txt);
+	}
+});
+```
 ## Help make quicksearch better!
 
 If you have a bug fix, the best way to help would be to:
