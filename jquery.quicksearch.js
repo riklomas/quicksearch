@@ -38,21 +38,19 @@
 			
 			var i = 0,
 				numMatchedRows = 0,
-				noresults = true, 
 				query = options.prepareQuery(val),
 				val_empty = (val.replace(' ', '').length === 0);
 			
 			for (var i = 0, len = rowcache.length; i < len; i++) {
 				if (val_empty || options.testQuery(query, cache[i], rowcache[i])) {
 					options.show.apply(rowcache[i]);
-					noresults = false;
 					numMatchedRows++;
 				} else {
 					options.hide.apply(rowcache[i]);
 				}
 			}
 			
-			if (noresults) {
+			if (numMatchedRows == 0) {
 				this.results(false);
 			} else {
 				this.results(true);
@@ -160,9 +158,6 @@
 		};
 		
 		this.cache();
-		this.results(true);
-		this.stripe();
-		this.loader(false);
 		
 		return this.each(function () {
 			
