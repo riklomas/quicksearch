@@ -65,29 +65,29 @@ the form and input are not build by the script any more.
 
 ## Options
 
-* 	#### delay
+* 	**delay**
 	Delay of trigger in milliseconds
-*	#### selector
+*	**selector**
 	A query selector on sibling elements to test
-*	#### stripeRows
+*	**stripeRows**
 	An array of class names to go on each row
-*	#### loader
+*	**loader**
 	A query selector to find a loading element
-*	#### noResults
+*	**noResults**
 	A query selector to show if there's no results for the search
-*	#### bind
+*	**bind**
 	Event that the trigger is tied to
-*	#### onBefore
+*	**onBefore**
 	Function to call before trigger is called
-*	#### onAfter
+*	**onAfter**
 	Function to call after trigger is called
-*	#### show
+*	**show**
 	Function that will add styles to matched elements
-*	#### hide
+*	**hide**
 	Function that will add styles to unmatched elements
-*	#### prepareQuery
+*	**prepareQuery**
 	Function that transforms text from input_selector into query used by 'testQuery' function
-*	#### testQuery
+*	**testQuery**
 	Function that tells if a given item should be hidden
 	It takes 3 arguments:
 	- query prepared by 'prepareQuery'
