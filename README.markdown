@@ -1,3 +1,5 @@
+THIS PROJECT IS VERY MUCH DEAD AND NOT MAINTAINED. IT'S BEEN 6+ YEARS SINCE THE LAST UPDATES. DON'T EXPECT THIS TO WORK.
+
 # jQuery quicksearch plug-in
 
 A [jQuery][jquery_site] based plug-in for filtering large data sets with user input
